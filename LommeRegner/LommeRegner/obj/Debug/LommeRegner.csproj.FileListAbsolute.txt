@@ -1,0 +1,9 @@
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\bin\Debug\LommeRegner.exe.config
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\bin\Debug\LommeRegner.exe
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\bin\Debug\LommeRegner.pdb
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.csprojAssemblyReference.cache
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.Form1.resources
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.Properties.Resources.resources
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.csproj.GenerateResource.cache
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.exe
+C:\Users\ander\source\repos\LommeRegner\LommeRegner\obj\Debug\LommeRegner.pdb
