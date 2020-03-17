@@ -46,6 +46,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -53,7 +54,7 @@
             this.textBox1.Location = new System.Drawing.Point(76, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 45);
+            this.textBox1.Size = new System.Drawing.Size(442, 45);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -226,11 +227,22 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(537, 83);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(76, 75);
+            this.button18.TabIndex = 19;
+            this.button18.Text = "Circle";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 450);
+            this.ClientSize = new System.Drawing.Size(696, 450);
+            this.Controls.Add(this.button18);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button10);
@@ -251,6 +263,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,6 +289,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button18;
     }
 }
 
