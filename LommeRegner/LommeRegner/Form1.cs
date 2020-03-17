@@ -16,7 +16,7 @@ namespace LommeRegner
         String tal1 = string.Empty;       //Vælg det første tal
         String tal2 = string.Empty;       // Vælger det andet tal  
         char operation;                   //Her vælger hvilken funktion vi vil benytte for at opnå vores resultat 
-        double result = 0.0;              // Her skriver den resultatet ud  
+        double result = 0.0;              // Her skriver den resultatet ud.  
 
 
         public Form1()
