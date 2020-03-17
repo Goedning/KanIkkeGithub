@@ -12,7 +12,7 @@ namespace LommeRegner
 {
     public partial class Form1 : Form
     {
-        string input = string.Empty;      //Her bliver det registeret hvad vi trykker  
+        string input = string.Empty;      //Her bliver det registeret hvad vi trykker  //Go commit push?
         String tal1 = string.Empty;       //Vælg det første tal
         String tal2 = string.Empty;       // Vælger det andet tal  
         char operation;                   //Her vælger hvilken funktion vi vil benytte for at opnå vores resultat 
