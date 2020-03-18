@@ -18,7 +18,16 @@ namespace LommeRegner
         char operation;                   //Her vælger hvilken funktion vi vil benytte for at opnå vores resultat 
         double result = 0.0;              // Her skriver den resultatet ud.  
 
-
+        class circle
+        {
+            public double circ(double r)
+            {
+                double s;
+                double pi = 3.14;
+                s = r * r * pi;
+                return (s);
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -198,11 +207,10 @@ namespace LommeRegner
 
         private void button18_Click(object sender, EventArgs e)
         {
-            double radius;
-            double area;
-            radius = Convert.ToDouble(Text); 
-            area = 2 * 3.142 * radius * radius;
-            tal1 = Convert.ToString(area);
+            circle c = new circle();
+            double d;
+            d = c.circ(Convert.ToInt32(textBox1.Text));
+            textBox1.Text = Convert.ToString(d);
 
         }
 
