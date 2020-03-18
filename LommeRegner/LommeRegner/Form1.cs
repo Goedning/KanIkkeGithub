@@ -122,7 +122,7 @@ namespace LommeRegner
 
         private void button15_Click(object sender, EventArgs e)
         {
-            tal1 = input;                 //
+            tal1 = input;                 
             operation = '+';
             input = string.Empty;
         }
@@ -203,6 +203,21 @@ namespace LommeRegner
             radius = Convert.ToDouble(Text); 
             area = 2 * 3.142 * radius * radius;
             tal1 = Convert.ToString(area);
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
 
         }
     }
