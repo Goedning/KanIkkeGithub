@@ -206,7 +206,7 @@ namespace LommeRegner
 
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void button21_Click(object sender, EventArgs e) //
         {
 
         }
