@@ -12,7 +12,7 @@ namespace LommeRegner
 {
     public partial class Form1 : Form
     {
-        string input = string.Empty;      //Her bliver det registeret hvad vi trykker  //Go commit push?
+        string input = string.Empty;      //Her bliver det registeret hvad vi trykker  
         String tal1 = string.Empty;       //Vælg det første tal
         String tal2 = string.Empty;       // Vælger det andet tal  
         char operation;                   //Her vælger hvilken funktion vi vil benytte for at opnå vores resultat 
@@ -122,7 +122,7 @@ namespace LommeRegner
 
         private void button15_Click(object sender, EventArgs e)
         {
-            tal1 = input;                 //
+            tal1 = input;                 
             operation = '+';
             input = string.Empty;
         }
@@ -191,6 +191,35 @@ namespace LommeRegner
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            double radius;
+            double area;
+            radius = Convert.ToDouble(Text); 
+            area = 2 * 3.142 * radius * radius;
+            tal1 = Convert.ToString(area);
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
