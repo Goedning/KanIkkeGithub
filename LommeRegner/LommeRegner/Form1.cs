@@ -20,7 +20,7 @@ namespace LommeRegner
 
         class circle
         {
-            public double circ(double r)
+            public double circ(double r) // Her giver vi vores variabler værdier, der vil blive brugt nede i vores metode for at finde arealet på en cirkel
             {
                 double s;
                 double pi = 3.14;
@@ -28,7 +28,19 @@ namespace LommeRegner
                 return (s);
             }
         }
-        public Form1()
+
+        class trapez
+        {
+
+            // Funktion for at finde arealet af en trepez
+            public double Trapez(int b1, int b2, int h)
+            {
+                double j;
+                j = ((b1 + b2) / 2) * h;
+                return (j);
+            }
+        }
+            public Form1()
         {
             InitializeComponent();
         }
@@ -214,8 +226,13 @@ namespace LommeRegner
 
         }
 
-        private void button21_Click(object sender, EventArgs e) //
+        private void button21_Click(object sender, EventArgs e) 
         {
+            trapez z = new trapez();
+            double w;
+            w = z.Trapez(Convert.ToInt32(textBox1.Text),Convert.ToInt32(textBox1.Text),Convert.ToInt32(textBox1.Text));
+            textBox1.Text = Convert.ToString(w);
+
 
         }
 
