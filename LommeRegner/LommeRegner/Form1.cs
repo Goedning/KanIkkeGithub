@@ -40,6 +40,19 @@ namespace LommeRegner
                 return (j);
             }
         }
+
+        class cone
+        {
+            public double Cone(int r, int h) // Formlen til at skabe arealet af en cone
+            {
+                double y;
+                y = Math.PI * r * r + Math.PI * r * h;
+                return (y);
+            }
+
+
+        }
+
             public Form1()
         {
             InitializeComponent();
@@ -243,6 +256,10 @@ namespace LommeRegner
 
         private void button20_Click(object sender, EventArgs e)
         {
+            cone l = new cone();
+            double p;
+            p = l.Cone(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox1.Text));
+            textBox1.Text = Convert.ToString(p);
 
         }
     }
