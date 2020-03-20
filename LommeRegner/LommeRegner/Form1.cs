@@ -44,14 +44,27 @@ namespace LommeRegner
         class cone
         {
             public double Cone(int r, int h) // Formlen til at skabe arealet af en cone
+
             {
                 double y;
                 y = Math.PI * r * r + Math.PI * r * h;
                 return (y);
             }
 
-
         }
+
+        class firkant
+        {
+            public double kant(int n, int m)
+            {
+                double t;
+                t = n * m;
+                return (t);
+            }
+        }
+
+
+
 
             public Form1()
         {
@@ -251,7 +264,7 @@ namespace LommeRegner
 
         private void button22_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -261,6 +274,14 @@ namespace LommeRegner
             p = l.Cone(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox1.Text));
             textBox1.Text = Convert.ToString(p);
 
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            firkant k = new firkant();
+            double q;
+            q = k.kant(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox1.Text));
+            textBox1.Text = Convert.ToString(q);
         }
     }
 }
