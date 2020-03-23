@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\source\\repos\\Spil\\Spil\\Spil.csproj",
+      "projectUniqueName": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Spil\\Spil\\Spil.csproj",
       "projectName": "Spil",
-      "projectPath": "C:\\Users\\ander\\source\\repos\\Spil\\Spil\\Spil.csproj",
+      "projectPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Spil\\Spil\\Spil.csproj",
       "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ander\\source\\repos\\Spil\\Spil\\obj\\",
+      "outputPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Spil\\Spil\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
