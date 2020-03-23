@@ -27,7 +27,16 @@ namespace Spil
                 {
                     Console.WriteLine("{0} er for højt!", userGuess);
                 }
+                else if (userGuess < numberToGuess)
+                {
+                    Console.WriteLine("{0} er for lavt!", userGuess);
+                }
+                else
+                {
+                    Console.WriteLine("{0} rigtigt svar, Tillykke!", userGuess);
+                    Console.WriteLine("antal gæt: {0}", guesses);
 
+                }
             }
         }
     }
