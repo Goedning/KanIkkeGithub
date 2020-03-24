@@ -1,0 +1,11 @@
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.exe
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.deps.json
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.runtimeconfig.json
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.runtimeconfig.dev.json
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.dll
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\bin\Debug\netcoreapp3.1\Spil.pdb
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\obj\Debug\netcoreapp3.1\Spil.csprojAssemblyReference.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\obj\Debug\netcoreapp3.1\Spil.AssemblyInfoInputs.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\obj\Debug\netcoreapp3.1\Spil.AssemblyInfo.cs
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\obj\Debug\netcoreapp3.1\Spil.dll
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Spil\Spil\obj\Debug\netcoreapp3.1\Spil.pdb
