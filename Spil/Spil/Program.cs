@@ -6,11 +6,12 @@ namespace Spil
     {
         static void Main(string[] args)
         {
-            const int MAX_NUMBER = 10;  // 23-03-2020 Vi begynder på vores gætte spil.
+            int MAX_NUMBER = 10;  // 23-03-2020 Vi begynder på vores gætte spil.
 
             Random random = new Random();
             int numberToGuess = random.Next(MAX_NUMBER) + 1;
             int userGuess = 0;
+            string userChoice;
             bool lose = false;
             int score = 0;
 
@@ -18,9 +19,10 @@ namespace Spil
             Console.WriteLine("tallet ligger i mellem 0 og {0}.", MAX_NUMBER);
 
             while (!lose)
-            {             
+            {
 
-                Console.Write("indtast dit gæt: ");
+                
+                Console.WriteLine("indtast dit gæt: ");
                 int.TryParse(Console.ReadLine(), out userGuess);
 
                 if (userGuess > numberToGuess)
@@ -41,11 +43,30 @@ namespace Spil
                 {
                     Console.WriteLine("{0} rigtigt svar, Tillykke!", userGuess);
                     score++;
-                    Console.WriteLine("Din nuværende score er på " + score);                   
+                    Console.WriteLine("Din nuværende score er på " + score);
                     lose = false;
 
+                }
+                if (lose)
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Du tabte, vil du prøve igen? (y/n)");
+                    userChoice = Console.ReadLine();
+                    if (userChoice == "n")
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("oh okay jeg forstår ;( ");
+                        Console.WriteLine("");
+                        Environment.Exit(0);
+                    }
+                    else if (userChoice == "y")
+                    {
+                        numberToGuess = random.Next(MAX_NUMBER) + 1;
+                        lose = false;
+                    }
                 }
             }
         }
     }
 }
+
