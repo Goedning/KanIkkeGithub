@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Spil
 {
@@ -6,11 +10,12 @@ namespace Spil
     {
         static void Main(string[] args)
         {
-            int MAX_NUMBER = 10;  // 23-03-2020 Vi begynder på vores gætte spil.
+            const int MAX_NUMBER = 10;  // 23-03-2020 Vi begynder på vores gætte spil.
 
             Random random = new Random();
             int numberToGuess = random.Next(MAX_NUMBER) + 1;
             int userGuess = 0;
+            int forsog = 0;
             string userChoice;
             bool lose = false;
             int score = 0;
@@ -21,30 +26,40 @@ namespace Spil
             while (!lose)
             {
 
-                
-                Console.WriteLine("indtast dit gæt: ");
+
+                Console.Write("indtast dit gæt: ");
                 int.TryParse(Console.ReadLine(), out userGuess);
 
                 if (userGuess > numberToGuess)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("{0} er for højt!", userGuess);
-                    Console.WriteLine("Det rigtige svar var  " + numberToGuess);
-                    Console.WriteLine("Din score endte på " + score);
-                    lose = true;
+                    forsog++;
+                    Console.WriteLine("Du har " + (3 - forsog) + " forsøg tilbage ");
+                    if (3 - forsog == 0)
+                    {
+                        lose = true;
+                    }
                 }
                 else if (userGuess < numberToGuess)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("{0} er for lavt!", userGuess);
-                    Console.WriteLine("Det rigtige svar var  " + numberToGuess);
-                    Console.WriteLine("Din score endte på " + score);
-                    lose = true;
+                    forsog++;
+                    Console.WriteLine("Du har " + (3 - forsog) + " forsøg tilbage ");
+                    if (3 - forsog == 0)
+                    {
+                        lose = true;
+                    }
                 }
                 else
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("{0} rigtigt svar, Tillykke!", userGuess);
                     score++;
                     Console.WriteLine("Din nuværende score er på " + score);
-                    lose = false;
+                    numberToGuess = random.Next(MAX_NUMBER) + 1; //Vi skal bruge et nyt tal hver gang i gætter tallet korrekt.
+
 
                 }
                 if (lose)
@@ -61,9 +76,14 @@ namespace Spil
                     }
                     else if (userChoice == "y")
                     {
-                        numberToGuess = random.Next(MAX_NUMBER) + 1;
+                        numberToGuess = random.Next(MAX_NUMBER) + 1; //Vi modtager et nyt tal når vi begynder spillet igen
                         lose = false;
+                        Console.Clear();
                     }
+                }
+                if (score <= 1)
+                {
+
                 }
             }
         }
