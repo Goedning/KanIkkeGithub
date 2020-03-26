@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace Spil
             int numberToGuess = random.Next(MAX_NUMBER) + 1;
             int userGuess = 0;
             int forsog = 0;
+            string playerName;
             string userChoice;
             bool lose = false;
             int score = 0;
@@ -26,8 +28,9 @@ namespace Spil
             while (!lose)
             {
 
-
+                
                 Console.Write("indtast dit gæt: ");
+                
                 int.TryParse(Console.ReadLine(), out userGuess);
 
                 if (userGuess > numberToGuess)
@@ -58,6 +61,7 @@ namespace Spil
                     Console.WriteLine("{0} rigtigt svar, Tillykke!", userGuess);
                     score++;
                     Console.WriteLine("Din nuværende score er på " + score);
+                    forsog = 0;
                     numberToGuess = random.Next(MAX_NUMBER) + 1; //Vi skal bruge et nyt tal hver gang i gætter tallet korrekt.
 
 
@@ -66,25 +70,28 @@ namespace Spil
                 {
                     Console.WriteLine("");
                     Console.WriteLine("Du tabte, vil du prøve igen? (y/n)");
+                    Console.WriteLine("Din endelige score blev " + score);
                     userChoice = Console.ReadLine();
                     if (userChoice == "n")
                     {
                         Console.WriteLine("");
                         Console.WriteLine("oh okay jeg forstår ;( ");
                         Console.WriteLine("");
-                        Environment.Exit(0);
+                        return;
                     }
                     else if (userChoice == "y")
                     {
-                        numberToGuess = random.Next(MAX_NUMBER) + 1; //Vi modtager et nyt tal når vi begynder spillet igen
-                        lose = false;
+                        numberToGuess = random.Next(MAX_NUMBER) + 1; //Vi modtager et nyt tal når vi begynder spillet igen   
+                        if(userChoice == "y")
+                        {
+                            forsog = 3 - forsog;
+                            score = 0; // Vi nulstiller vores forsøg & score
+                        }
+                        lose = false;                        
                         Console.Clear();
                     }
                 }
-                if (score <= 1)
-                {
 
-                }
             }
         }
     }
