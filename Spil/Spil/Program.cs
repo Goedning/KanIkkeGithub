@@ -88,7 +88,7 @@ namespace Spil
                             score = 0; // Vi nulstiller vores forsøg & score
                         }
                         lose = false;                        
-                        Console.Clear();
+                        Console.Clear(); //Slut note mangler stadig Highscore & Gemme system
                     }
                 }
 
