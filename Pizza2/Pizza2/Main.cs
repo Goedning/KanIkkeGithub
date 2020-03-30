@@ -13,6 +13,8 @@ namespace Pizza2
     public partial class Main : Form
     {
         decimal Pris;
+        decimal Størrelse;
+        decimal Total;
 
         public Main()
         {
@@ -26,12 +28,17 @@ namespace Pizza2
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            Størrelse = -10;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            Størrelse = 10;
+        }
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            Størrelse = 0;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,12 +60,100 @@ namespace Pizza2
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+             Pris = 50; //Unødvendig Pris 1
+        }
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            Pris = 50; //Unødvendig Pris 2
+        }
 
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            Pris = 50; //Unødvendig Pris 3 Skal kun still op 1 gang, men fordi programmet muligivs skal udvides bliver det stillet op så ledes.
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (radioButton1.Checked == true)
+            {
+                radioButton1.Text.ToString();
+                textBox2.Text = radioButton1.Text;
+                if (checkBox1.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox2.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox3.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+            }
+            else if (radioButton2.Checked == true)
+            {
+                radioButton2.Text.ToString();
+                textBox2.Text = radioButton2.Text;
+                if (checkBox1.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox2.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox3.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+            }
+            else if (radioButton3.Checked == true)
+            {
+                radioButton3.Text.ToString();
+                textBox2.Text = radioButton3.Text;
+                if (checkBox1.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox2.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+                else if (checkBox3.Checked)
+                {
+                    Total = Pris + Størrelse;
+                    Total.ToString();
+                    textBox1.Text = Total.ToString();
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
         }
     }
 }
