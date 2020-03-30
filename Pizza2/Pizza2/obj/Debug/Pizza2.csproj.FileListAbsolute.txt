@@ -1,0 +1,9 @@
+C:\Users\ander\source\repos\Pizza2\Pizza2\bin\Debug\Pizza2.exe.config
+C:\Users\ander\source\repos\Pizza2\Pizza2\bin\Debug\Pizza2.exe
+C:\Users\ander\source\repos\Pizza2\Pizza2\bin\Debug\Pizza2.pdb
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.csprojAssemblyReference.cache
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.Main.resources
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.Properties.Resources.resources
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.csproj.GenerateResource.cache
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.exe
+C:\Users\ander\source\repos\Pizza2\Pizza2\obj\Debug\Pizza2.pdb
