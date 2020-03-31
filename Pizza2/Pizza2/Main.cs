@@ -60,16 +60,16 @@ namespace Pizza2
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-             Pris = 50; //Unødvendig Pris 1
+             Pris = 50; 
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Pris = 50; //Unødvendig Pris 2
+            Pris = 50; 
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            Pris = 50; //Unødvendig Pris 3 Skal kun still op 1 gang, men fordi programmet muligivs skal udvides bliver det stillet op så ledes.
+            Pris = 50; // Priserne kan ændres senere
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -153,7 +153,14 @@ namespace Pizza2
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // Tilføj if så den kun giver denne besked hvis, din ordrer box er fyldt ud.
             MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
         }
     }
 }
