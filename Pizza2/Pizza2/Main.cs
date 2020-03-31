@@ -159,8 +159,10 @@ namespace Pizza2
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form1 f1 = new Form1();
             f1.ShowDialog();
+            this.Close();
         }
     }
 }
