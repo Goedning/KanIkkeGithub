@@ -27,7 +27,7 @@ namespace Pizza2
 
         private void checkBox1_CheckChanged(object sender, EventArgs e)
         {
-            Størrelse = 36;
+            Størrelse = 40;
             checkBox2.Checked = false;
             checkBox3.Checked = false;
             if (checkBox1.Checked)
@@ -40,7 +40,7 @@ namespace Pizza2
 
         private void checkBox2_CheckChanged(object sender, EventArgs e)
         {
-            Størrelse = 45;
+            Størrelse = 50;
             checkBox1.Checked = false;
             checkBox3.Checked = false;
             if (checkBox2.Checked)
@@ -53,7 +53,7 @@ namespace Pizza2
 
         private void checkBox3_CheckChanged(object sender, EventArgs e)
         {
-            Størrelse = 57;
+            Størrelse = 60;
             checkBox2.Checked = false;
             checkBox1.Checked = false; // Når vi skifter kræve det et dobbeltklik, find fejlen senere!
             if (checkBox3.Checked)
@@ -77,7 +77,7 @@ namespace Pizza2
 
         private void checkBox17_CheckedChanged(object sender, EventArgs e)
         {
-            Dej = - 7;
+            Dej = - 5;
             if (checkBox17.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
@@ -88,7 +88,7 @@ namespace Pizza2
 
         private void checkBox18_CheckedChanged(object sender, EventArgs e)
         {
-            Dej =  - 10;
+            Dej =  - 8;
             if (checkBox18.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
@@ -121,7 +121,7 @@ namespace Pizza2
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
-            Sovs = -12;
+            Sovs = -5;
             if (checkBox7.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
@@ -154,7 +154,7 @@ namespace Pizza2
 
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
-            Kryderi = -3;
+            Kryderi = -4;
             if (checkBox10.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
@@ -176,7 +176,7 @@ namespace Pizza2
 
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
-            Andet = - 15;
+            Andet = - 10;
             if (checkBox15.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
