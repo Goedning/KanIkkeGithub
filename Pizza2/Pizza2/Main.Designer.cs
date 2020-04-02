@@ -51,6 +51,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -278,12 +280,35 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "Antal";
             // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.textBox4.Location = new System.Drawing.Point(460, 135);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(114, 43);
+            this.textBox4.TabIndex = 24;
+            this.textBox4.Text = "Indtast Mængden du ønsker at købe";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(143, 287);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 36);
+            this.button5.TabIndex = 25;
+            this.button5.Text = "DRIKKELSE";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pizza2.Properties.Resources._3_pizza_fresca;
             this.ClientSize = new System.Drawing.Size(586, 379);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button4);
@@ -340,6 +365,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

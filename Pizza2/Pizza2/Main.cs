@@ -97,7 +97,7 @@ namespace Pizza2
             if (radioButton1.Checked == true)
             {
                 radioButton1.Text.ToString();
-                textBox2.Text = radioButton1.Text + $"{Antal}";
+                textBox2.Text = radioButton1.Text + $" * {Antal}";
                 if (checkBox1.Checked)
                 {
 
@@ -114,7 +114,7 @@ namespace Pizza2
             else if (radioButton2.Checked == true)
             {
                 radioButton2.Text.ToString();
-                textBox2.Text = radioButton2.Text + $"{Antal}";
+                textBox2.Text = radioButton2.Text + $" * {Antal}";
                 if (checkBox1.Checked)
                 {
 
@@ -131,7 +131,7 @@ namespace Pizza2
             else if (radioButton3.Checked == true)
             {
                 radioButton3.Text.ToString();
-                textBox2.Text = radioButton3.Text;
+                textBox2.Text = radioButton3.Text + $" * {Antal}";
                 if (checkBox1.Checked)
                 {
 
@@ -162,5 +162,12 @@ namespace Pizza2
             this.Close();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+            this.Close();
+        }
     }
 }
