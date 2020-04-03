@@ -17,6 +17,7 @@ namespace Pizza2
         decimal Pepsi;
         decimal Total;
         decimal Antal;
+        decimal NytAntal;
 
         public Form2()
         {
@@ -224,6 +225,20 @@ namespace Pizza2
                 radioButton6.Text.ToString();
                 textBox3.Text = "Lille " + radioButton6.Text + $" * {Antal}";
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Antal == 1)
+            {
+                MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
+            }
+            else if (Antal >= 2)
+            {
+                NytAntal = Total / 2;
+                MessageBox.Show("Tak for din store bestilling som Tak, Halver vi din pris!" + $" {NytAntal}");
+            }
+
         }
     }
 }
