@@ -9,6 +9,7 @@ namespace Pizza2
         public decimal Størrelse;
         public decimal Total;
         public decimal Antal;
+        public decimal NytAntal;
 
 
         public Main()
@@ -150,8 +151,16 @@ namespace Pizza2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Tilføj if så den kun giver denne besked hvis, din ordrer box er fyldt ud.
-            MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
+            if(Antal == 1)
+            {
+                MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
+            }
+            else if(Antal >= 2)
+            {
+                NytAntal = Total / 2;
+                MessageBox.Show("Tak for din store bestilling som Tak, Halver vi din pris!" + $" {NytAntal}");
+            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

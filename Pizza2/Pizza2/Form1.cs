@@ -223,5 +223,15 @@ namespace Pizza2
             f2.ShowDialog();
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            {
+                MessageBox.Show("Din Ordre er på vej og vil være ved dig hurtigst muligt!");
+           
+            }
+
+        }
     }
 }
