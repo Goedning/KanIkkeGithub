@@ -5,10 +5,10 @@ namespace SpaceInvaders
 {
     class Barrier
     {
-        //Collection of columns of barrier
+        //Samlingen af vores skjolde.
         public List<Column> Columns { get; set; } = new List<Column>();
 
-        //Max Y location of drawing square, used when barriers needs to be destroyed because invaders are too close.
+        //Ødelægger Barrierne hvis fjernder kommer for tæt.
         public float TopY { get; set; } = float.MaxValue;
     }
 

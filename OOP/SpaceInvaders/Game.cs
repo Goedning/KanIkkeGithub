@@ -16,15 +16,13 @@ namespace SpaceInvaders
     {
         public Form1 Form { get; }
 
-        /// <summary>
-        /// Number of available lifes.
-        /// </summary>
+
+        /// Sæt antal start liv.
+
         public int Life { get; private set; } = 5;
 
 
-        /// <summary>
-        /// Current level playing.
-        /// </summary>
+       
         public int Level
         {
             get => lvl;
@@ -38,9 +36,7 @@ namespace SpaceInvaders
 
 
 
-        /// <summary>
-        /// Current score.
-        /// </summary>
+        
         public int Score
         {
             get => score;
@@ -54,136 +50,136 @@ namespace SpaceInvaders
 
 
 
-        //Collection of tank missiles
+        
         private List<PointF> tankMissiles = new List<PointF>();
 
-        //Collection of all invaders' explosions
+        
         private List<PointF> explosions = new List<PointF>();
 
-        //Collection of all invaders' explosions used for drawing (thread safe)
+        
         private List<PointF> explosionsSafe = new List<PointF>();
 
-        //Collection of invaders' missiles
+        
         private List<PointF> invadersMissiles = new List<PointF>();
 
-        //Collection of invaders' missiles used for drawing (thread safe)
+        
         private List<PointF> invadersMissilesSafe = new List<PointF>();
 
-        //Collection of invaders
+        
         private List<Invader> invaders = new List<Invader>();
 
-        //Collection of barriers
+        
         private List<Barrier> barriers = new List<Barrier>();
 
-        //Contains bottom green line
+       
         private List<RectangleF> bottomLine = new List<RectangleF>();
 
-        //Constains location of red ufo (mystery)
+        
         private PointF? mysteryLocation = null;
 
-        //Explosion position of killed mystery
+        
         private PointF? mysteryExplosion;
 
-        //Current position of tank
+       
         private PointF tankLocation;
 
-        //Ticks when explosion should be deleted
+        
         private Timer mysteryExplosionTimer = new Timer();
 
-        //Main game loop
+       
         private Timer drawingTimer;
 
-        //Ticks when new mystery should appear
+        
         private Timer mysteryShouldAppearTimer;
 
-        //Ticks when invaders should make a move
+        
         private Timer invadersShouldMoveTimer;
 
-        //Ticks when invader explosion should be removed
+        
         private Timer explosionsTimer = new Timer();
 
-        //Ticks when invaders should shoot
+        
         private Timer invadersShouldShootTimer = new Timer();
 
-        //Ticks after showing tank explosion, respawns the tank and ensures than the tank is immune for couple of seconds
+        
         private Timer tankExplosionTimer = new Timer(800);
 
-        //Ticks when immunity of tank should turn off
+        
         private Timer immunityTimer = new Timer(3000);
 
-        //Tank has reloaded and its ready to shoot again
+        
         private Timer tankCanShootTimer = new Timer();
 
-        //Flag stating whether it is possible to shoot with tank (tank needs time to reload)
+        
         private bool canTankShoot = true;
 
-        //Left arrow key pressed
+        
         private bool keyLArrow = false;
 
-        //Right arrow key pressed
+        
         private bool keyRArrow = false;
 
-        //Space key pressed
+        
         private bool keySpace = false;
 
-        //Direction of invaders' movement
+        
         private bool invadersMovingRight = true;
 
-        //Locking invaders' movement when changing direction
+        
         private bool lckMovement = false;
 
-        //locking the drawingTimer, so it cant be called more than once concurrently
+        
         private bool lockingToken = false;
 
-        //Should be tank drawn or its ruins?
+        
         private bool shouldDrawTank = true;
 
-        //Is immunity enabled?
+        
         private bool immunity = false;
 
-        //Ensures not to resume the game when it was paused by user and tank explosion is shown
+        
         private bool forcePause = false;
 
-        //is game paused by using P key?
+        
         private bool paused = false;
 
-        //is game over?
+        
         private bool endGame = false;
 
-        //only one invader left, enable special mode
+        
         private bool enableExtraSpeed = false;
 
-        //Cheat
+        
         private bool enemyShootingDisabled = false;
 
-        //was barrier destroyed played
+        
         private bool barrierDestroyedPlayed = false;
 
-        //randomly generated speed of currently appearing mystery
+        
         private int mysterySpeed;
 
-        //When invaders' movement direction change, their movement accelerates by shorteningMs
+        
         private int movementAccelerationMs = 50;
 
-        //Y value of bottom green line, calculated based on window dimension
+        
         private int greenLineY;
 
-        //Probability of selecting invaders shooter intelligently (shooter that can hit tank)
+        
         private double shootingPrecision = 0.3;
 
-        //when moving down interval is slowed down and then restored
+        
         private double invadersShouldMoveOriginalInterval;
 
-        //y location of invader with highest y location
+        
         private float bottomInvaderY = -1;
 
-        //barrier y location
+        
         private float barrierY;
 
-        //radius of splash damage when barrier is hit
+        
         private static float splashRadius;
 
-        //used to adjust the immunityTimer interval if game was paused during tank immunity
+        
         private Stopwatch immunityStopwatch = new Stopwatch();
 
         //Random is used for various purposes
