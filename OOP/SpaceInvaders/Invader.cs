@@ -6,27 +6,25 @@ namespace SpaceInvaders
     public abstract class Invader
     {
 
-        // Score I am going to get after killing this invader.
+        
         public virtual int ScoreGain { get; set; }
 
-        // Drawing position of this invader.
+        
         public PointF Location { get; set; }
 
-        //First drawing state Image.
+        
         public virtual Image Look1 { get; set; }
 
-        //Second drawing state Image.
+        
         public virtual Image Look2 { get; set; }
 
-        //Which state is currently active.
-        //true means first state
-        //false means second state
+        
         public bool State { get; set; } = true;
 
-        //Width of currently active image.
+        
         public virtual int Width { get; set; }
 
-        //Height of currently active image.
+        
         public virtual int Height { get; set; }
 
         protected Invader(PointF location)

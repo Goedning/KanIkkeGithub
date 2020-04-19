@@ -182,46 +182,46 @@ namespace SpaceInvaders
         
         private Stopwatch immunityStopwatch = new Stopwatch();
 
-        //Random is used for various purposes
+        
         private Random random = new Random();
         public Game(Form1 f)
         {
             Form = f;
 
-            //main drawing timer
+            
             drawingTimer = new Timer(15) { Enabled = true };
             drawingTimer.Elapsed += drawingTimer_Elapsed;
 
-            //this should solve problem with moving the tank
+            
             Form.KeyPreview = true;
 
-            //setting up events
+            
             Form.Paint += Form_Paint;
             Form.Resize += Form_Resize;
             Form.KeyDown += FormOnKeyDown;
             Form.KeyUp += FormOnKeyUp;
             Form.Deactivate += FormOnDeactivate;
 
-            //setting various variables
+            
             greenLineY = Form.Height - Constants.GreenLineYShift;
             barrierY = 0.65f * Form.Height;
 
-            //creating barriers
+            
             GenerateBarrier();
 
             CreateBottomLine();
 
             tankLocation = new PointF(Form.Width / 2f - Resources.tank.Width / 2f, Form.Height - Constants.TankBottomYShift);
 
-            //setting up radius of splash damage (used when barrier is hit)
+            
             splashRadius = 0.01058f * (Form.Width + Form.Height);
 
-            //setting up mystery
+            
             mysteryShouldAppearTimer = new Timer(random.Next(Constants.MysteryShouldAppearRange.Item1, Constants.MysteryShouldAppearRange.Item2)) { Enabled = true };
             mysteryShouldAppearTimer.Elapsed += MysteryShouldAppearTimerOnElapsed;
 
 
-            //setting up timers
+            
             tankCanShootTimer.Elapsed += TankCanShootTimerOnElapsed;
 
             immunityTimer.Elapsed += ImmunityTimerOnElapsed;
@@ -235,15 +235,13 @@ namespace SpaceInvaders
             tankExplosionTimer.Elapsed += TankExplosionTimerElapsed;
             invadersShouldShootTimer.Elapsed += InvadersShouldShootTimerOnElapsed;
 
-            //begin lvl 1
+            
             NextLevel();
 
 
         }
 
-        /// <summary>
-        /// Pause game when game loses its focus.
-        /// </summary>
+        
         private void FormOnDeactivate(object sender, EventArgs e)
         {
             if (!endGame)
@@ -253,9 +251,7 @@ namespace SpaceInvaders
             }
         }
 
-        /// <summary>
-        /// Filling up collection with new barriers.
-        /// </summary>
+        
         private void GenerateBarrier()
         {
             barrierDestroyedPlayed = false;
@@ -279,11 +275,7 @@ namespace SpaceInvaders
             }
         }
 
-        /// <summary>
-        /// Update associated label for Properties (Score, Level)
-        /// </summary>
-        /// <param name="value">Value that should be put into label</param>
-        /// <param name="l">Which label should be updated.</param>
+        
         private void PutTextIntoControl(int value, Label l)
         {
             if (l.InvokeRequired)
@@ -292,9 +284,7 @@ namespace SpaceInvaders
                 l.Text = value.ToString();
         }
 
-        /// <summary>
-        /// Ticks when invaders should make a move.
-        /// </summary>
+        
         private void InvadersShouldMoveTimerElapsed(object sender, ElapsedEventArgs e)
         {
             if (invaders.Count == 0) return;
@@ -344,9 +334,7 @@ namespace SpaceInvaders
             drawingTimer.Enabled = true;
         }
 
-        /// <summary>
-        /// Setting various things before invaders can move down.
-        /// </summary>
+        
         private void PrepareForMovingDown()
         {
             invadersShouldMoveOriginalInterval = invadersShouldMoveTimer.Interval;
@@ -355,9 +343,7 @@ namespace SpaceInvaders
             drawingTimer.Enabled = true;
         }
 
-        /// <summary>
-        /// Move down invader according to lvl. Accelerates invaders and their shooting.
-        /// </summary>
+        
         private void MovingDown()
         {
             invadersMovingRight = !invadersMovingRight;
@@ -373,10 +359,7 @@ namespace SpaceInvaders
             UpdateBottomInvader();
         }
 
-        /// <summary>
-        /// Used to check whether direction of invaders should be changed.
-        /// </summary>
-        /// <returns>Invader with highest x location.</returns>
+        
         private Invader RightInvader()
         {
             Invader f = invaders[0];
@@ -392,10 +375,7 @@ namespace SpaceInvaders
         }
 
 
-        /// <summary>
-        /// Used to check whether direction of invaders should be changed.
-        /// </summary>
-        /// <returns>Invader with lowest x location.</returns>
+        
         private Invader LeftInvader()
         {
             Invader f = invaders[0];
@@ -409,9 +389,7 @@ namespace SpaceInvaders
             return f;
         }
 
-        /// <summary>
-        /// Releasing keys.
-        /// </summary>
+        
         private void FormOnKeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
@@ -432,18 +410,14 @@ namespace SpaceInvaders
             e.SuppressKeyPress = true;
         }
 
-        /// <summary>
-        /// Already reloaded, tank can shoot again.
-        /// </summary>
+        
         private void TankCanShootTimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             canTankShoot = true;
             tankCanShootTimer.Enabled = false;
         }
 
-        /// <summary>
-        /// Ticks when new mystery should appear.
-        /// </summary>
+        
         private void MysteryShouldAppearTimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             Utils.Play(Resources.ufo_lowpitch);
@@ -453,9 +427,7 @@ namespace SpaceInvaders
             s.Interval = random.Next(Constants.MysteryShouldAppearRange.Item1, Constants.MysteryShouldAppearRange.Item2);
         }
 
-        /// <summary>
-        /// Keys are pressed.
-        /// </summary>
+        
         private void FormOnKeyDown(object sender, KeyEventArgs e)
         {
 
@@ -475,9 +447,7 @@ namespace SpaceInvaders
             e.SuppressKeyPress = true;
         }
 
-        /// <summary>
-        /// In fact an event that pauses a game when its being minimalized.
-        /// </summary>
+        
         private void Form_Resize(object sender, EventArgs e)
         {
             if (Form.WindowState == FormWindowState.Minimized)
@@ -485,9 +455,7 @@ namespace SpaceInvaders
 
         }
 
-        /// <summary>
-        /// Creating bottom green line.
-        /// </summary>
+        
         private void CreateBottomLine()
         {
             bottomLine.Clear();
@@ -502,16 +470,16 @@ namespace SpaceInvaders
         {
             e.Graphics.SmoothingMode = SmoothingMode.HighSpeed;
 
-            //drawing bottom green line
+            
             e.Graphics.FillRectangles(Brushes.LawnGreen, bottomLine.ToArray());
 
-            //drawing lifes left
+            
             e.Graphics.DrawString(Life.ToString(), new Font(Utils.SpaceInvadersFamily, 28), Brushes.White, 10, Form.Height - 85);
 
             for (int i = 80; i <= 50 * Life; i += 50)
                 e.Graphics.DrawImage(Resources.tank, new PointF(i, Form.Height - 80));
 
-            //drawing tank
+            
             if (shouldDrawTank)
             {
                 if (immunity)
@@ -526,52 +494,45 @@ namespace SpaceInvaders
                 e.Graphics.DrawImage(Resources.tank_destroyed, tankLocation);
             }
 
-            //drawing mystery
+            
             if (mysteryLocation.HasValue)
                 e.Graphics.DrawImage(Resources.mystery, mysteryLocation.Value);
 
-            //drawing tank shoots
+            
             for (int i = 0; i < tankMissiles.Count; i++)
             {
                 e.Graphics.DrawLine(new Pen(Color.LawnGreen, 3f), tankMissiles[i].X, tankMissiles[i].Y - Constants.TankMissileLength, tankMissiles[i].X, tankMissiles[i].Y);
             }
 
-            //drawing invaders missiles
+            
             for (int i = 0; i < invadersMissilesSafe.Count; i++)
                 e.Graphics.DrawImage(Resources.lightning, invadersMissilesSafe[i]);
             
 
 
-            //drawing mystery explosion
+            
             if (mysteryExplosion != null)
                 e.Graphics.DrawImage(Resources.mystery_boom, mysteryExplosion.Value);
             
 
-            //drawing normal explosion
+            
             for (int i = 0; i < explosionsSafe.Count; i++)
                 e.Graphics.DrawImage(Resources.boom, explosionsSafe[i]); 
 
 
 
-            //draw all invaders
+            
             foreach (var invader in invaders)
             {
                 e.Graphics.DrawInvader(invader);
             }
 
-            //drawing barriers
+            
             foreach (Barrier b in barriers)
                 e.Graphics.FillRectangles(Brushes.LawnGreen, b.Columns.SelectMany(x => x.Rectangles).ToArray());
         }
 
-        /// <summary>
-        /// Actual logic of generating barrier.
-        /// </summary>
-        /// <param name="origin">PointF to start generating barrier from.</param>
-        /// <param name="w">How many pixels should I draw to right (x location).</param>
-        /// <param name="h">Height of current column that is drawn.</param>
-        /// <param name="partN">Which part of barrier is being drawn.</param>
-        /// <param name="b">Reference to barrier created.</param>
+        
         private void CreateBarrier(PointF origin, float w, float h, int partN, ref Barrier b)
         {
             PointF startPt = origin;
@@ -624,25 +585,23 @@ namespace SpaceInvaders
             }
         }
 
-        /// <summary>
-        /// Main game loop.
-        /// </summary>
+        
         private void drawingTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
             if (lockingToken)
                 return;
             lockingToken = true;
 
-            //Invalidating screen
+            
             if (Form.InvokeRequired)
                 Form.Invoke(new Action(() =>
                 {
                     Form.Refresh();
                 }));
-            //moving mystery
+            
             if (mysteryLocation.HasValue)
             {
-                //collision with mystery
+                
                 RectangleF m = new RectangleF(mysteryLocation.Value.X, mysteryLocation.Value.Y, Resources.mystery.Width, Resources.mystery.Height);
                 foreach (var shoot in tankMissiles)
                 {
@@ -658,19 +617,19 @@ namespace SpaceInvaders
                     }
                 }
 
-                //deleting unvisible mystery
+                
                 if (mysteryLocation != null)
                     if (mysteryLocation.Value.X + Resources.mystery.Width < 0)
                     {
                         mysteryLocation = null;
                     }
 
-                //moving mystery at his speed
+                
                 if (mysteryLocation != null)
                     mysteryLocation = new PointF(mysteryLocation.Value.X - mysterySpeed, mysteryLocation.Value.Y);
             }
 
-            //moving tank
+            
             if (keyLArrow && tankLocation.X > 0 && shouldDrawTank)
                 tankLocation.X -= Constants.TankMovingDistancePx;
 
@@ -678,7 +637,7 @@ namespace SpaceInvaders
             if (keyRArrow && tankLocation.X + Resources.tank.Width + 12 < Form.Width && shouldDrawTank)
                 tankLocation.X += Constants.TankMovingDistancePx;
 
-            //tank is shooting
+            
             if (canTankShoot && keySpace)
             {
                 canTankShoot = false;
@@ -690,7 +649,7 @@ namespace SpaceInvaders
             invadersMissilesSafe = invadersMissiles.ToList();
             explosionsSafe = explosions.ToList();
 
-            //tank missile collision with invaders
+            
             for (int i = invaders.Count - 1; i >= 0; i--)
             {
                 Invader curr = invaders[i];
@@ -700,7 +659,7 @@ namespace SpaceInvaders
                     PointF tS = tankMissiles[j];
                     if (Utils.IsPointInRect(Utils.TopOfTankMissile(tankMissiles[j]), currInvader))
                     {
-                        //collision
+                        
                         Score += curr.ScoreGain;
                         ShowNormalExplosion(new PointF(currInvader.X, currInvader.Y));
                         tankMissiles.RemoveAll(x => x == tS);
@@ -717,12 +676,12 @@ namespace SpaceInvaders
                 }
             }
 
-            //collision of invaders shoot
+            
             for (int i = invadersMissiles.Count - 1; i >= 0; --i)
             {
                 PointF bottom = Utils.BottomOfInvaderMissile(invadersMissiles[i]);
 
-                //collision with bottom green line
+                
                 if (Math.Abs(bottom.Y - greenLineY) < 5)
                 {
                     for (int j = bottomLine.Count - 1; j >= 0; j--)
@@ -732,9 +691,9 @@ namespace SpaceInvaders
 
                     }
                 }
-                //tank collision with invaders shoot 
+                 
                 if (!immunity)
-                { //if tank was not reswapned moment ago
+                { 
                     RectangleF invaderMissile = new RectangleF(invadersMissiles[i].X, invadersMissiles[i].Y, Resources.lightning.Width, Resources.lightning.Height);
                     RectangleF tank = new RectangleF(tankLocation.X, tankLocation.Y, Resources.tank.Width, Resources.tank.Height);
                     if (invaderMissile.IntersectsWith(tank))
@@ -745,25 +704,25 @@ namespace SpaceInvaders
                             immunityStopwatch.Restart();
                         }
 
-                        if (Life - 1 == 0) //gameover
+                        if (Life - 1 == 0) 
                         {
                             Life--;
                             End();
                         }
-                        else //life down
+                        else 
                         {
                             Life--;
                             ShowTankExplosion();
                         }
 
-                        invadersMissiles.RemoveAt(i); //remove invader shoot if collision occured
+                        invadersMissiles.RemoveAt(i); 
                         i--;
                         if (i < 0)
                             break;
                     }
                 }
 
-                //collision of tank and invader missiles
+                
                 for (int j = tankMissiles.Count - 1; j >= 0 && i >= 0; j--)
                 {
                     PointF top = Utils.TopOfTankMissile(tankMissiles[j]);
@@ -771,7 +730,7 @@ namespace SpaceInvaders
                     {
                         if (top.Y - bottom.Y < 11)
                         {
-                            tankMissiles.RemoveAt(j); //remove both missiles
+                            tankMissiles.RemoveAt(j); 
                             invadersMissiles.RemoveAt(i);
                             i--;
                             if (i < 0)
@@ -781,10 +740,10 @@ namespace SpaceInvaders
                     }
                 }
 
-                //collision of barrier and invader missiles
+                
                 for (int j = 0; j < barriers.Count && i >= 0; j++)
                 {
-                                                                             //column idx of impact
+                                                                             
                     if (CollisionWithBarrier(invadersMissiles[i], barriers[j], out var cIdx, true))
                     {
                         invadersMissiles.RemoveAt(i);
@@ -799,7 +758,7 @@ namespace SpaceInvaders
             }
 
 
-            //collision of tank missiles and barrier
+           
             for (int j = 0; j < barriers.Count; ++j)
             {
                 for (int i = tankMissiles.Count - 1; i >= 0; i--)
@@ -816,7 +775,7 @@ namespace SpaceInvaders
 
 
 
-            //remove unvisible shoots
+            
             for (int i = tankMissiles.Count - 1; i >= 0; i--)
             {
                 if (tankMissiles[i].Y < 0)
@@ -831,7 +790,7 @@ namespace SpaceInvaders
 
             }
 
-            //only one invader left, special mode
+            
             if (invaders.Count == 1 && !enableExtraSpeed)
             {
                 enableExtraSpeed = true;
@@ -839,28 +798,28 @@ namespace SpaceInvaders
                 invadersShouldMoveTimer.Interval = 100;
             }
 
-            //level cleared
+            
             if (invaders.Count == 0)
             {
                 NextLevel();
             }
             
-            //moving tank shoots
+           
             for (int i = 0; i < tankMissiles.Count; i++)
                 tankMissiles[i] = new PointF(tankMissiles[i].X, tankMissiles[i].Y - Constants.MissilesMovingDistance);
 
-            //moving invaders shoots
+            
             for (int i = 0; i < invadersMissiles.Count; i++)
                 invadersMissiles[i] = new PointF(invadersMissiles[i].X, invadersMissiles[i].Y + Constants.MissilesMovingDistance);
 
-            //barriers were destoryed earlier by invaders missiles
+            
             if (!barriers.Any() && !barrierDestroyedPlayed)
             {
                 Utils.Play(Resources.barrier_destroyed);
                 barrierDestroyedPlayed = true;
             }
 
-            //Invaders are too close. Barriers need to be destroyed.
+            
             if (bottomInvaderY + Constants.MaxInvaderHeight >= barrierY && barriers.Any())
             {
                 barriers.Clear();
@@ -868,16 +827,14 @@ namespace SpaceInvaders
                 barrierDestroyedPlayed = true;
             }
 
-            //Invaders got to the tank location, gameover.
+            
             if (bottomInvaderY + Constants.MaxInvaderHeight >= tankLocation.Y)
                 End();
 
             lockingToken = false;
         }
 
-        /// <summary>
-        /// When invader is killed shooting speed is slightly increased.
-        /// </summary>
+        
         private void SmallShootingSpeedIncrease()
         {
             if (invadersShouldShootTimer.Interval - 10 < 420)
@@ -885,9 +842,7 @@ namespace SpaceInvaders
             else invadersShouldShootTimer.Interval -= 5;
         }
 
-        /// <summary>
-        /// Stoping all threads when game has ended.
-        /// </summary>
+        
         private void DisableAllTimers()
         {
             foreach (FieldInfo fieldInfo in GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic))
@@ -901,9 +856,7 @@ namespace SpaceInvaders
             }
         }
 
-        /// <summary>
-        /// Gameover.
-        /// </summary>
+       
         public void End()
         {
             endGame = true;
@@ -913,14 +866,7 @@ namespace SpaceInvaders
             Dispose();
         }
 
-        /// <summary>
-        /// Checking whether collision with barrier happened.
-        /// </summary>
-        /// <param name="missile">Which missile to check</param>
-        /// <param name="barrier">Which barrier to check.</param>
-        /// <param name="columnIdx">Column idx of barrier where collision happenend.</param>
-        /// <param name="fromInvader">whether the missile comes from the invader or tank.</param>
-        /// <returns></returns>
+        
         private bool CollisionWithBarrier(PointF missile, Barrier barrier, out int columnIdx, bool fromInvader)
         {
             columnIdx = -1;
@@ -964,13 +910,7 @@ namespace SpaceInvaders
             return false;
 
         }
-        /// <summary>
-        /// Splash damaging barrier.
-        /// </summary>
-        /// <param name="impactPoint">Reference point</param>
-        /// <param name="barrier">barrier to damage</param>
-        /// <param name="columnIdx">idx of column</param>
-        /// <param name="fromInvader">whether invader missile collided with barrier or it was tank missile</param>
+        
         private void SplashDamage(PointF impactPoint, Barrier barrier, int columnIdx, bool fromInvader)
         {
             double m;
@@ -991,7 +931,7 @@ namespace SpaceInvaders
                            impactPoint) < splashRadius)
                 {
                     m = j == columnIdx ? 1.0 : 0.7;
-                    int k; //square idx in column
+                    int k; 
                     if (fromInvader)
                         k = 0;
                     else k = barrier.Columns[j].Rectangles.Count - 1;
@@ -1023,7 +963,7 @@ namespace SpaceInvaders
                     }
 
                     if (!second)
-                        j++; //which column
+                        j++; 
                     else j--;
                 }
 
@@ -1033,9 +973,7 @@ namespace SpaceInvaders
 
         }
 
-        /// <summary>
-        /// Ticks after showing tank explosion, respawns the tank and ensures than the tank is immune for couple of seconds.
-        /// </summary>
+        
         private void TankExplosionTimerElapsed(object sender, ElapsedEventArgs e)
         {
             tankExplosionTimer.Enabled = false;
@@ -1049,18 +987,14 @@ namespace SpaceInvaders
 
         }
 
-        /// <summary>
-        /// Ticks when immunity of tank should turn off.
-        /// </summary>
+        
         private void ImmunityTimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             immunityTimer.Enabled = false;
             immunity = false;
         }
 
-        /// <summary>
-        /// Tank hit. Showing explosion.
-        /// </summary>
+        
         private void ShowTankExplosion()
         {
             PauseWOMsg();
@@ -1075,9 +1009,7 @@ namespace SpaceInvaders
         }
 
 
-        /// <summary>
-        /// Generating next lvl.
-        /// </summary>
+        
         private void NextLevel()
         {
             invadersMissiles.Clear();
@@ -1097,9 +1029,7 @@ namespace SpaceInvaders
         }
 
 
-        /// <summary>
-        /// Ticks when invaders should shoot
-        /// </summary>
+       
         private void InvadersShouldShootTimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             int numberOfShooters = Math.Min(random.Next(1, 3), invaders.Count);
@@ -1121,10 +1051,7 @@ namespace SpaceInvaders
             shooters.ForEach(x => MakeInvaderShootMissile(x));
         }
 
-        /// <summary>
-        /// Function taking invaders that can hit tank.
-        /// </summary>
-        /// <returns>n invaders with closest x location to tank.</returns>
+        
         private List<Invader> NClosestInvaders(int n)
         {
             var cpy = invaders.ToArray().ToList();
@@ -1132,14 +1059,7 @@ namespace SpaceInvaders
             return cpy.Take(n).ToList();
         }
 
-        /// <summary>
-        /// Comparison functor.
-        /// </summary>
-        /// <returns>
-        /// -1 if invaders are in the sorted order
-        /// 1 if invaders are not in the sorted order
-        /// 0 if invaders are of the same instance
-        /// </returns>
+        
         private int InvaderComparator(Invader i1, Invader i2)
         {
             float diff1 = Math.Abs(tankLocation.X - i1.Location.X);
@@ -1153,19 +1073,14 @@ namespace SpaceInvaders
             return 0;
         }
 
-        /// <summary>
-        /// Make particular invader shoot a missile.
-        /// </summary>
-        /// <param name="invader">Invader that is going to shoot.</param>
+        
         private void MakeInvaderShootMissile(Invader invader)
         {
             PointF toAdd = PointF.Add(invader.Location, new Size(10, invader.Height));
             invadersMissiles.Add(toAdd);
         }
 
-        /// <summary>
-        /// Generating invaders for level.
-        /// </summary>
+        
         private void GenerateInvadersForLevel()
         {
             int b = Math.Min((int)(Form.Height * Constants.InvadersPositionCoeff * Level), 380);
@@ -1180,9 +1095,7 @@ namespace SpaceInvaders
             UpdateBottomInvader();
         }
 
-        /// <summary>
-        /// Invader with highest y location killed. Finding the new one.
-        /// </summary>
+        
         private void UpdateBottomInvader()
         {
             foreach (Invader invader in invaders)
@@ -1193,10 +1106,7 @@ namespace SpaceInvaders
             }
         }
 
-        /// <summary>
-        /// Normal explosion effect.
-        /// </summary>
-        /// <param name="invaderLocation"></param>
+        
         private void ShowNormalExplosion(PointF invaderLocation)
         {
             explosions.Add(invaderLocation);
@@ -1205,9 +1115,7 @@ namespace SpaceInvaders
 
         }
 
-        /// <summary>
-        /// Explosion should dissapear.
-        /// </summary>
+       
         private void ExplosionsTimerOnElapsed(object sender, ElapsedEventArgs e)
         {
             drawingTimer.Stop();
@@ -1217,18 +1125,14 @@ namespace SpaceInvaders
             drawingTimer.Enabled = mysteryShouldAppearTimer.Enabled;
         }
 
-        /// <summary>
-        /// Mystery explosion effect.
-        /// </summary>
+        
         private void ShowMysteryExplosion()
         {
             mysteryExplosionTimer.Enabled = true;
             mysteryExplosionTimer.Interval = Constants.ExplosionInterval;
         }
 
-        /// <summary>
-        /// Mystery explosion effect ending.
-        /// </summary>
+        
         private void MysteryExplosionTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
             mysteryExplosion = null;
@@ -1236,9 +1140,7 @@ namespace SpaceInvaders
             Score += (mysterySpeed - 2) * random.Next(20, 30);
         }
 
-        /// <summary>
-        /// Cleaning up.
-        /// </summary>
+        
         public void Dispose()
         {
             drawingTimer?.Dispose();
@@ -1254,21 +1156,18 @@ namespace SpaceInvaders
             Form.KeyUp -= FormOnKeyUp;
         }
 
-        /// <summary>
-        /// Cheating for making the game easier.
-        /// </summary>
-        /// <param name="keyData">Key pressed.</param>
+        
         public void CheatKey(Keys keyData)
         {
-            if (keyData == Keys.H) //add life
+            if (keyData == Keys.H) 
             {
                 Life++;
             }
-            else if (keyData == Keys.S) //add score
+            else if (keyData == Keys.S) 
             {
                 Score += 100;
             }
-            else if (keyData == Keys.P) //pause game
+            else if (keyData == Keys.P) 
             {
                 if (paused)
                 {
@@ -1281,26 +1180,24 @@ namespace SpaceInvaders
                     PauseGameWMsg();
                 }
             }
-            else if (keyData == Keys.M) //disable invaders shooting
+            else if (keyData == Keys.M) 
             {
                 enemyShootingDisabled = !enemyShootingDisabled;
                 invadersShouldShootTimer.Enabled = !invadersShouldShootTimer.Enabled;
             }
-            else if (keyData == Keys.B) //regenerate barriers
+            else if (keyData == Keys.B) 
             {
                 barriers.Clear();
                 GenerateBarrier();
             }
-            else if (keyData == Keys.D) //delete one invader
+            else if (keyData == Keys.D) 
             {
                 invaders.RemoveAt(random.Next(0, invaders.Count - 1));
                 SmallShootingSpeedIncrease();
             }
         }
 
-        /// <summary>
-        /// Pause game without showing Pause MSG
-        /// </summary>
+        
         private void PauseWOMsg()
         {
             drawingTimer.Enabled = false;
@@ -1311,9 +1208,7 @@ namespace SpaceInvaders
             tankCanShootTimer.Enabled = false;
         }
 
-        /// <summary>
-        /// Pause game and show Pause MSG
-        /// </summary>
+        
         private void PauseGameWMsg()
         {
 
@@ -1325,9 +1220,7 @@ namespace SpaceInvaders
         }
 
 
-        /// <summary>
-        /// Resume game.
-        /// </summary>
+        
         private void ResumeGame()
         {
             drawingTimer.Enabled = true;
