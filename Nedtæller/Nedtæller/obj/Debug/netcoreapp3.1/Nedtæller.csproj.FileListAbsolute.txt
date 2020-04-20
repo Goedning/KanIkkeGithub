@@ -1,0 +1,11 @@
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.exe
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.deps.json
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.runtimeconfig.json
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.runtimeconfig.dev.json
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.dll
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\bin\Debug\netcoreapp3.1\Nedtæller.pdb
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\obj\Debug\netcoreapp3.1\Nedtæller.csprojAssemblyReference.cache
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\obj\Debug\netcoreapp3.1\Nedtæller.AssemblyInfoInputs.cache
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\obj\Debug\netcoreapp3.1\Nedtæller.AssemblyInfo.cs
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\obj\Debug\netcoreapp3.1\Nedtæller.dll
+C:\Users\ander\source\repos\Nedtæller\Nedtæller\obj\Debug\netcoreapp3.1\Nedtæller.pdb
