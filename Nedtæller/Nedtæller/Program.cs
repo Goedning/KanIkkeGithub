@@ -4,8 +4,7 @@ namespace Nedtæller
 {
     class Program
     {
-        DateTime d1;
-        DateTime d2;
+
 
         static void Main(string[] args)
         {
@@ -16,29 +15,28 @@ namespace Nedtæller
             Console.WriteLine("For at finde tiden til d.10 maj Tryk 1");
             Console.WriteLine("For at finde tiden til sommerferie Tryk 2");
             Console.WriteLine("For at finde tiden til juleaften tryk 3");
+            Console.WriteLine();
 
-            ConsoleKeyInfo consoleKeyInfo = Console.ReadKey();
+            ConsoleKeyInfo consoleKeyInfo = Console.ReadKey(true);
             if (consoleKeyInfo.Key == ConsoleKey.D1)
             {
-                Console.WriteLine("Debug");
+                DateTime skp = new DateTime(2020, 5, 10);
+                double dagetilbagetilskp = skp.Subtract(DateTime.Today).TotalDays;
+                Console.WriteLine(dagetilbagetilskp);
             }
             else if (consoleKeyInfo.Key == ConsoleKey.D2)
             {
-                Console.WriteLine("Debug");
+                DateTime skp = new DateTime(2020, 6, 26);
+                double dagetilbagetilskp = skp.Subtract(DateTime.Today).TotalDays;
+                Console.WriteLine(dagetilbagetilskp);
             }
             else if (consoleKeyInfo.Key == ConsoleKey.D2)
             {
-                Console.WriteLine("Debug");
+                DateTime skp = new DateTime(2020, 12, 24);
+                double dagetilbagetilskp = skp.Subtract(DateTime.Today).TotalDays;
+                Console.WriteLine(dagetilbagetilskp);
             }
 
-        }
-        public void Nedlukning()
-        {
-            DateTime strt_date = DateTime.Now;
-            DateTime end_date = Convert.ToDateTime("10/5/2020 23:59:59");
-            TimeSpan nod = (end_date - strt_date);
-            Console.WriteLine(strt_date + "" + end_date + "" + "" + nod.TotalHours + "");
-            Console.ReadKey();
         }
 
     }
