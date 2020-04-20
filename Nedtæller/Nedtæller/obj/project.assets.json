@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\source\\repos\\Nedtæller\\Nedtæller\\Nedtæller.csproj",
+      "projectUniqueName": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Nedtæller\\Nedtæller\\Nedtæller.csproj",
       "projectName": "Nedtæller",
-      "projectPath": "C:\\Users\\ander\\source\\repos\\Nedtæller\\Nedtæller\\Nedtæller.csproj",
+      "projectPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Nedtæller\\Nedtæller\\Nedtæller.csproj",
       "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ander\\source\\repos\\Nedtæller\\Nedtæller\\obj\\",
+      "outputPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\Nedtæller\\Nedtæller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
