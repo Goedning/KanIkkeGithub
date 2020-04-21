@@ -1,0 +1,6 @@
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\bin\Debug\PingPong.exe.config
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\bin\Debug\PingPong.exe
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\bin\Debug\PingPong.pdb
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\obj\Debug\PingPong.csprojAssemblyReference.cache
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\obj\Debug\PingPong.exe
+C:\Users\ander\Desktop\CSharpConsoleGames-master\PingPong\obj\Debug\PingPong.pdb
