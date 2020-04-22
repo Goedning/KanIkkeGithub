@@ -16,8 +16,7 @@ namespace SpaceInvaders
     {
         public Form1 Form { get; }
 
-
-        /// Sæt antal start liv.
+        
 
         public int Life { get; private set; } = 5;
 
