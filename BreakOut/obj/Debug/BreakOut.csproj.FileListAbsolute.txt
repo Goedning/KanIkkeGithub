@@ -1,0 +1,6 @@
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\bin\Debug\BreakOut.exe.config
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\bin\Debug\BreakOut.exe
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\bin\Debug\BreakOut.pdb
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\obj\Debug\BreakOut.csprojAssemblyReference.cache
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\obj\Debug\BreakOut.exe
+C:\Users\ander\Desktop\CSharpConsoleGames-master\BreakOut\obj\Debug\BreakOut.pdb
