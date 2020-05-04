@@ -17,7 +17,7 @@ namespace SpaceInvaders {
             InitializeComponent();
             UseCustomFont();
 
-            // Add singleplayer highscores to a list
+            
             using (StreamReader fileRead = new StreamReader(fileNameSP)) {
                 scoresSP[0] = fileRead.ReadLine();
                 scoresSP[1] = fileRead.ReadLine();
@@ -27,7 +27,7 @@ namespace SpaceInvaders {
             highScoreSP2.Text = scoresSP[1];
             highScoreSP3.Text = scoresSP[2];
 
-            // Add multiplayer highscores to a list
+            
             using (StreamReader fileRead = new StreamReader(fileNameMP)) {
                 scoresMP[0] = fileRead.ReadLine();
                 scoresMP[1] = fileRead.ReadLine();
@@ -38,6 +38,21 @@ namespace SpaceInvaders {
             highScoreMP3.Text = scoresMP[2];
         }
 
+        public SinglePlayerForm SinglePlayerForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public MultiPlayerForm MultiPlayerForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         private void onePlayerButton_Click(object sender, EventArgs e)
         {

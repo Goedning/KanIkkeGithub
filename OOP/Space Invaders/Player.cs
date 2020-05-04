@@ -10,6 +10,7 @@ namespace SpaceInvaders {
         public Player() {
         }
 
+
         public bool IsFired() { // Tjekker om vi har et aktivt projektil
             return (isShoot);
         }

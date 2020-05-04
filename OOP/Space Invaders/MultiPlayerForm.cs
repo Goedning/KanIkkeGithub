@@ -41,7 +41,7 @@ namespace SpaceInvaders {
         private List<Alien> AlienList = new List<Alien>();
         private List<Alien> BottomAliens = new List<Alien>();
         private Projectile player1Proj = new Projectile(1);
-        private Projectile player2Proj = new Projectile(1);
+        private Projectile player2Proj = new Projectile(2);
         private Player p1 = new Player();
         private Player p2 = new Player();
         private static Random RandomNum = new Random();
@@ -57,13 +57,21 @@ namespace SpaceInvaders {
             p2.SetPos(player2.Location); 
             p2.SetLives(3);
 
-            // Add highscores to a list
+            // Tilføj din highscore
             using (StreamReader fileRead = new StreamReader(fileName)) {
                 scores[0] = fileRead.ReadLine();
                 scores[1] = fileRead.ReadLine();
                 scores[2] = fileRead.ReadLine();
             }
             highScore.Text = scores[0];
+        }
+
+        public MainMenu MainMenu
+        {
+            get => default;
+            set
+            {
+            }
         }
 
         private void soundToggle_Click(object sender, EventArgs e) // Sluk eller tænd lyd
@@ -93,7 +101,7 @@ namespace SpaceInvaders {
 
         private void playerMovement_Tick(object sender, EventArgs e) // bevægelse og skyd
         {
-            // Player 1 movement keys
+            
             if (Keyboard.IsKeyDown(Key.A)) // Venstre
             {
                 if (player1.Location.X > 20) { // Begrænser hvor vi kan gå
@@ -848,7 +856,7 @@ namespace SpaceInvaders {
                 if ((alien.GetState() == 1) && totalProjectiles <= 3) { 
                     int rand = RandomNum.Next(0, numAliensLeft);
                     if (rand == 1) {
-                        int randAlien = RandomNum.Next(0, BottomAliens.Count); // Vælog en alien til at skyde, men den skal være i bunden, altså tættest på spilleren
+                        int randAlien = RandomNum.Next(0, BottomAliens.Count); // Vælg en alien til at skyde
                         while (BottomAliens[randAlien].GetState() == 0 && numAliensLeft > 0) 
                             randAlien = RandomNum.Next(0, BottomAliens.Count);
                         foreach (var item in AlienProjectileList) {
@@ -910,7 +918,7 @@ namespace SpaceInvaders {
 
         private void UseCustomFont()
         {
-            PrivateFontCollection customFont = new PrivateFontCollection();
+            PrivateFontCollection customFont = new PrivateFontCollection(); // Vi benytter en tekst type jeg har hentet ned
 
             customFont.AddFontFile("SpaceInvadersFont.ttf");
 
@@ -925,7 +933,7 @@ namespace SpaceInvaders {
             btnControls.Font = new Font(customFont.Families[0], 12);
         }
 
-        private void DisableAllTimers()
+        private void DisableAllTimers() // Simon siger stop
         {
             alienMovement.Enabled = false;
             playerMovement.Enabled = false;
@@ -933,7 +941,7 @@ namespace SpaceInvaders {
             projectileAnimation.Enabled = false;
         }
 
-        private void EnableAllTimers()
+        private void EnableAllTimers() // Simon siger vi må bevæge os igen
         {
             alienMovement.Enabled = true;
             playerMovement.Enabled = true;
