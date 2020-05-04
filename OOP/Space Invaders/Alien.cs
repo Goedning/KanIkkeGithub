@@ -20,6 +20,7 @@ namespace SpaceInvaders {
             yCord = y;
         }
 
+
         public void SetImage(Image i) {
             alienImage = i;
         }

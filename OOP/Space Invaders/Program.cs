@@ -7,8 +7,9 @@ using System.IO;
 using System.Windows.Forms;
 
 namespace SpaceInvaders {
-    static class Program {
-        
+    static class Program
+    {
+
 
         [STAThread]
         static void Main() {

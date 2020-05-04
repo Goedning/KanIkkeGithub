@@ -60,6 +60,14 @@ namespace SpaceInvaders {
             highScore.Text = scores[0];
         }
 
+        public MainMenu MainMenu
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void soundToggle_Click(object sender, EventArgs e) 
         {
             if (musicToggle) {
