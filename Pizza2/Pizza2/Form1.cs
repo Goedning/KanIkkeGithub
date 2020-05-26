@@ -35,6 +35,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -48,6 +49,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -61,6 +63,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -72,6 +75,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -83,6 +87,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -92,6 +97,7 @@ namespace Pizza2
             if (checkBox18.Checked)
             {
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
+
                 Total.ToString();
                 textBox1.Text = Total.ToString();
             }
@@ -105,6 +111,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -116,6 +123,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -127,6 +135,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -138,6 +147,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -149,6 +159,7 @@ namespace Pizza2
                 Total = Størrelse + Dej + Sovs + Kryderi + Andet;
                 Total.ToString();
                 textBox1.Text = Total.ToString();
+
             }
         }
 
@@ -213,7 +224,7 @@ namespace Pizza2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

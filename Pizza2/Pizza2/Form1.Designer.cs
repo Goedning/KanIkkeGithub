@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(48, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(125, 119);
@@ -111,7 +111,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(6, 85);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(53, 21);
+            this.checkBox3.Size = new System.Drawing.Size(58, 24);
             this.checkBox3.TabIndex = 7;
             this.checkBox3.Text = "Stor";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(6, 31);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(52, 21);
+            this.checkBox1.Size = new System.Drawing.Size(55, 24);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Lille";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(6, 58);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(71, 21);
+            this.checkBox2.Size = new System.Drawing.Size(78, 24);
             this.checkBox2.TabIndex = 6;
             this.checkBox2.Text = "Mellem";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -145,7 +145,7 @@
             this.groupBox2.Controls.Add(this.checkBox18);
             this.groupBox2.Controls.Add(this.checkBox17);
             this.groupBox2.Controls.Add(this.checkBox16);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(186, 78);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(120, 119);
@@ -158,7 +158,7 @@
             this.checkBox18.AutoSize = true;
             this.checkBox18.Location = new System.Drawing.Point(6, 87);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(110, 21);
+            this.checkBox18.Size = new System.Drawing.Size(120, 24);
             this.checkBox18.TabIndex = 10;
             this.checkBox18.Text = "Modellervoks";
             this.checkBox18.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             this.checkBox17.AutoSize = true;
             this.checkBox17.Location = new System.Drawing.Point(6, 58);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(107, 21);
+            this.checkBox17.Size = new System.Drawing.Size(118, 24);
             this.checkBox17.TabIndex = 9;
             this.checkBox17.Text = "Rugbrød Dej";
             this.checkBox17.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             this.checkBox16.AutoSize = true;
             this.checkBox16.Location = new System.Drawing.Point(6, 31);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(97, 21);
+            this.checkBox16.Size = new System.Drawing.Size(106, 24);
             this.checkBox16.TabIndex = 8;
             this.checkBox16.Text = "Normal Dej";
             this.checkBox16.UseVisualStyleBackColor = true;
@@ -222,7 +222,7 @@
             this.groupBox3.Controls.Add(this.checkBox7);
             this.groupBox3.Controls.Add(this.checkBox8);
             this.groupBox3.Controls.Add(this.checkBox9);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(48, 217);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(125, 119);
@@ -235,7 +235,7 @@
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(6, 85);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(97, 21);
+            this.checkBox7.Size = new System.Drawing.Size(108, 24);
             this.checkBox7.TabIndex = 7;
             this.checkBox7.Text = "Ingen Sovs";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -255,7 +255,7 @@
             this.checkBox9.AutoSize = true;
             this.checkBox9.Location = new System.Drawing.Point(6, 58);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(114, 21);
+            this.checkBox9.Size = new System.Drawing.Size(124, 24);
             this.checkBox9.TabIndex = 6;
             this.checkBox9.Text = "Brunsvir Sovs";
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             this.groupBox4.Controls.Add(this.checkBox10);
             this.groupBox4.Controls.Add(this.checkBox11);
             this.groupBox4.Controls.Add(this.checkBox12);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(186, 217);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(120, 119);
@@ -280,7 +280,7 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(6, 85);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(101, 21);
+            this.checkBox10.Size = new System.Drawing.Size(113, 24);
             this.checkBox10.TabIndex = 7;
             this.checkBox10.Text = "Ingen Spice";
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -291,7 +291,7 @@
             this.checkBox11.AutoSize = true;
             this.checkBox11.Location = new System.Drawing.Point(6, 31);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(65, 21);
+            this.checkBox11.Size = new System.Drawing.Size(70, 24);
             this.checkBox11.TabIndex = 5;
             this.checkBox11.Text = "Peber";
             this.checkBox11.UseVisualStyleBackColor = true;
@@ -302,7 +302,7 @@
             this.checkBox12.AutoSize = true;
             this.checkBox12.Location = new System.Drawing.Point(6, 58);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(83, 21);
+            this.checkBox12.Size = new System.Drawing.Size(90, 24);
             this.checkBox12.TabIndex = 6;
             this.checkBox12.Text = "Oregano";
             this.checkBox12.UseVisualStyleBackColor = true;
@@ -314,7 +314,7 @@
             this.groupBox5.Controls.Add(this.checkBox13);
             this.groupBox5.Controls.Add(this.checkBox14);
             this.groupBox5.Controls.Add(this.checkBox15);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(327, 78);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(132, 119);
@@ -327,7 +327,7 @@
             this.checkBox13.AutoSize = true;
             this.checkBox13.Location = new System.Drawing.Point(6, 85);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(127, 21);
+            this.checkBox13.Size = new System.Drawing.Size(141, 24);
             this.checkBox13.TabIndex = 7;
             this.checkBox13.Text = "Ekstra Dressing";
             this.checkBox13.UseVisualStyleBackColor = true;
@@ -338,7 +338,7 @@
             this.checkBox14.AutoSize = true;
             this.checkBox14.Location = new System.Drawing.Point(6, 31);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(64, 21);
+            this.checkBox14.Size = new System.Drawing.Size(70, 24);
             this.checkBox14.TabIndex = 5;
             this.checkBox14.Text = "Agurk";
             this.checkBox14.UseVisualStyleBackColor = true;
@@ -349,7 +349,7 @@
             this.checkBox15.AutoSize = true;
             this.checkBox15.Location = new System.Drawing.Point(6, 58);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(67, 21);
+            this.checkBox15.Size = new System.Drawing.Size(73, 24);
             this.checkBox15.TabIndex = 6;
             this.checkBox15.Text = "Tomat";
             this.checkBox15.UseVisualStyleBackColor = true;
@@ -358,7 +358,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(12, 411);
+            this.button1.Location = new System.Drawing.Point(164, 535);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 54);
             this.button1.TabIndex = 13;
@@ -369,7 +369,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(192, 411);
+            this.button2.Location = new System.Drawing.Point(17, 536);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 54);
             this.button2.TabIndex = 14;
@@ -379,8 +379,8 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(367, 411);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(468, 535);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 54);
             this.button3.TabIndex = 15;
@@ -390,7 +390,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(326, 237);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(468, 453);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 62);
@@ -400,10 +401,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(323, 217);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(466, 421);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 17;
             this.label1.Text = "PRIS:";
             // 
@@ -426,7 +427,7 @@
             this.groupBox6.Controls.Add(this.label3);
             this.groupBox6.Controls.Add(this.label2);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox6.Location = new System.Drawing.Point(519, 78);
+            this.groupBox6.Location = new System.Drawing.Point(615, 78);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(182, 461);
             this.groupBox6.TabIndex = 12;
@@ -517,7 +518,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 168);
+            this.label7.Location = new System.Drawing.Point(7, 170);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(159, 24);
             this.label7.TabIndex = 5;
@@ -571,11 +572,11 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(12, 485);
+            this.button4.Location = new System.Drawing.Point(316, 536);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(125, 54);
             this.button4.TabIndex = 18;
-            this.button4.Text = "DRIKKELSE";
+            this.button4.Text = "DRIKKE VARER";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -584,7 +585,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pizza2.Properties.Resources._3_pizza_fresca;
-            this.ClientSize = new System.Drawing.Size(741, 551);
+            this.ClientSize = new System.Drawing.Size(819, 617);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label1);

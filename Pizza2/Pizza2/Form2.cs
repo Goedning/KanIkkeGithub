@@ -236,8 +236,13 @@ namespace Pizza2
             else if (Antal >= 2)
             {
                 NytAntal = Total / 2;
-                MessageBox.Show("Tak for din store bestilling som Tak, Halver vi din pris!" + $" {NytAntal}");
+                MessageBox.Show("Tak for din store bestilling som Tak, Halver vi din pris til" + $" {NytAntal}");
             }
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -10,6 +10,7 @@ namespace Pizza2
         public decimal Total;
         public decimal Antal;
         public decimal NytAntal;
+        
 
 
         public Main()
@@ -177,6 +178,21 @@ namespace Pizza2
             Form2 f2 = new Form2();
             f2.ShowDialog();
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

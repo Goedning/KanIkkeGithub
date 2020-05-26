@@ -18,3 +18,15 @@ C:\Users\ander\Documents\GitHub\KanIkkeGithub\Pizza2\Pizza2\obj\Debug\Pizza2.exe
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\Pizza2\Pizza2\obj\Debug\Pizza2.pdb
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\Pizza2\Pizza2\obj\Debug\Pizza2.Form1.resources
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\Pizza2\Pizza2\obj\Debug\Pizza2.Form2.resources
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\bin\Debug\Pizza2.exe.config
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\bin\Debug\Pizza2.exe
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\bin\Debug\Pizza2.pdb
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.csprojAssemblyReference.cache
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.Form1.resources
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.Form2.resources
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.Main.resources
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.Properties.Resources.resources
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.csproj.GenerateResource.cache
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.csproj.CoreCompileInputs.cache
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.exe
+C:\Users\45296\Desktop\KanIkkeGithub-Spil-Project (1)\KanIkkeGithub-Spil-Project\Pizza2\Pizza2\obj\Debug\Pizza2.pdb
