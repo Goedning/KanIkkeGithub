@@ -132,7 +132,7 @@ namespace SpaceInvaders {
 
         private void projectileCollision_Tick(object sender, EventArgs e) 
         {
-            // Check player's projectile collision
+            // Tjekker vores kolision
             for (int i = 0; i < 55; i++) {
                 if (playerProjectile.Bounds.IntersectsWith(AlienPBList[i].Bounds) && (AlienList[i].GetState() == 1) && p1.IsFired()) { 
                     playerProjectile.Visible = playerProj.SetVisibility(false); 
@@ -664,7 +664,7 @@ namespace SpaceInvaders {
 
         private void CheckEndGame() 
         {
-            // If player wins...
+            // Hvis vi vinder
             if (numAliensLeft == 0) {
                 alienMovement.Enabled = false;
                 playerMovement.Enabled = false;
