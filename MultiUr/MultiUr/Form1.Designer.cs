@@ -187,6 +187,10 @@
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 4;
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

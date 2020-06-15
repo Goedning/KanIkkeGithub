@@ -8,3 +8,13 @@ C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.GenerateRes
 C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.CoreCompileInputs.cache
 C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.exe
 C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.pdb
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.exe.config
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.exe
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.pdb
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csprojAssemblyReference.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.Form1.resources
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.Properties.Resources.resources
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.GenerateResource.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.CoreCompileInputs.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.exe
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.pdb

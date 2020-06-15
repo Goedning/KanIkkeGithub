@@ -33,8 +33,9 @@ namespace MultiUr
         }
 
         Stopwatch StopWatch = new Stopwatch();
-        public void Timer2_Tick(Object sender, EventArgs e)
+        private void timer2_Tick_1(object sender, EventArgs e)
         {
+            
             TimeSpan elapsed = this.StopWatch.Elapsed;
             label3.Text = string.Format("{0:00}:{1:00}:{2:00}:{3:00}", Math.Floor(elapsed.TotalHours), elapsed.Minutes, elapsed.Seconds, elapsed.Milliseconds);
 
@@ -43,6 +44,7 @@ namespace MultiUr
 
         private void button1_Click(Object sender, EventArgs e)
         {
+            
             timer2.Start();
             StopWatch.Start();
         }
@@ -65,5 +67,7 @@ namespace MultiUr
             listView1.Items.Add(label3.Text);
 
         }
+
+
     }
 }
