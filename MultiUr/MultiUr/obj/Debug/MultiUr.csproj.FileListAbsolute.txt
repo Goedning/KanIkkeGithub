@@ -1,0 +1,10 @@
+C:\Users\45296\source\repos\MultiUr\MultiUr\bin\Debug\MultiUr.exe.config
+C:\Users\45296\source\repos\MultiUr\MultiUr\bin\Debug\MultiUr.exe
+C:\Users\45296\source\repos\MultiUr\MultiUr\bin\Debug\MultiUr.pdb
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.csprojAssemblyReference.cache
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.Form1.resources
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.Properties.Resources.resources
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.GenerateResource.cache
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.CoreCompileInputs.cache
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.exe
+C:\Users\45296\source\repos\MultiUr\MultiUr\obj\Debug\MultiUr.pdb
