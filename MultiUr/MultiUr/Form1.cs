@@ -21,7 +21,7 @@ namespace MultiUr
         }
 
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void dagsDato(object sender, EventArgs e)
         {
             DateTime time = DateTime.Now;
             this.TidNu.Text = time.ToString();
@@ -33,7 +33,7 @@ namespace MultiUr
         }
 
         Stopwatch StopWatch = new Stopwatch();
-        private void timer2_Tick_1(object sender, EventArgs e)
+        private void stopWatch(object sender, EventArgs e)
         {
             
             TimeSpan elapsed = this.StopWatch.Elapsed;
@@ -42,32 +42,73 @@ namespace MultiUr
 
         }
 
-        private void button1_Click(Object sender, EventArgs e)
+        private void startStopUr(Object sender, EventArgs e)
         {
             
             timer2.Start();
             StopWatch.Start();
         }
 
-        private void button2_Click(Object sender, EventArgs e)
+        private void stopStopUr(Object sender, EventArgs e)
         {
             timer2.Stop();
             StopWatch.Stop();
         }
 
-        private void button3_Click(Object sender, EventArgs e)
+        private void resetStopUr(Object sender, EventArgs e)
         {
             StopWatch.Reset();
             label3.Text = "00:00:00:000";
             listView1.Items.Clear();
         }
 
-        private void button4_Click(Object sender, EventArgs e)
-        {
-            listView1.Items.Add(label3.Text);
+        private void markerStopUr(Object sender, EventArgs e)
+        {           
+            listView1.Items.Add(label3.Text);            
+            
 
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.ToString() == "Stop Ur")
+            {
+                groupBox2.Hide();
+                groupBox1.Show();
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Ned Tælling")
+            { 
+                groupBox1.Hide();
+                groupBox2.Show();
+                textBox1.Text = "00:00:00:000";
+            }
+                
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            timer2.Start();
+            label3.Text = textBox1.Text;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Add(label3.Text);
+        }
+
+        private void stopUr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -35,17 +35,27 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tid = new System.Windows.Forms.TabPage();
             this.stopUr = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Tid.SuspendLayout();
             this.stopUr.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +71,7 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.dagsDato);
             // 
             // TidNu
             // 
@@ -105,12 +115,11 @@
             // stopUr
             // 
             this.stopUr.BackColor = System.Drawing.Color.RosyBrown;
-            this.stopUr.Controls.Add(this.button4);
+            this.stopUr.Controls.Add(this.groupBox2);
+            this.stopUr.Controls.Add(this.groupBox1);
+            this.stopUr.Controls.Add(this.comboBox1);
             this.stopUr.Controls.Add(this.listView1);
             this.stopUr.Controls.Add(this.label3);
-            this.stopUr.Controls.Add(this.button3);
-            this.stopUr.Controls.Add(this.button2);
-            this.stopUr.Controls.Add(this.button1);
             this.stopUr.Controls.Add(this.label2);
             this.stopUr.Location = new System.Drawing.Point(4, 79);
             this.stopUr.Name = "stopUr";
@@ -118,67 +127,140 @@
             this.stopUr.Size = new System.Drawing.Size(1107, 627);
             this.stopUr.TabIndex = 1;
             this.stopUr.Text = "Stop Ur";
+            this.stopUr.Click += new System.EventHandler(this.stopUr_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Location = new System.Drawing.Point(427, 219);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(371, 362);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ned Tæller";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(20, 45);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(151, 117);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Indsæt Tid";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(200, 45);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 117);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Stop";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(20, 213);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(151, 117);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "Marker";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Location = new System.Drawing.Point(6, 219);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(382, 362);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Stop Ur";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(16, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 117);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "START";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.startStopUr);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(16, 213);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(151, 117);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "RESET";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.resetStopUr);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(297, 365);
+            this.button4.Location = new System.Drawing.Point(212, 213);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(151, 117);
             this.button4.TabIndex = 7;
             this.button4.Text = "MARKER";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.markerStopUr);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(212, 45);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 117);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "STOP";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.stopStopUr);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Stop Ur",
+            "Ned Tælling"});
+            this.comboBox1.Location = new System.Drawing.Point(833, 23);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(256, 33);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.Text = "Vælg Funktion";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // listView1
             // 
             this.listView1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
             this.listView1.LabelWrap = false;
-            this.listView1.Location = new System.Drawing.Point(650, 219);
+            this.listView1.Location = new System.Drawing.Point(820, 219);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(451, 361);
+            this.listView1.Size = new System.Drawing.Size(281, 361);
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(78, 23);
+            this.label3.Location = new System.Drawing.Point(110, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(960, 132);
+            this.label3.Size = new System.Drawing.Size(621, 132);
             this.label3.TabIndex = 5;
             this.label3.Text = "00:00:00:000";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(96, 365);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 117);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "RESET";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(297, 219);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 117);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "STOP";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(96, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 117);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "START";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -189,7 +271,26 @@
             // 
             // timer2
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick_1);
+            this.timer2.Tick += new System.EventHandler(this.stopWatch);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(200, 256);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(151, 66);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(195, 213);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 25);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Indsæt Tid";
             // 
             // Form1
             // 
@@ -205,6 +306,9 @@
             this.tabControl1.ResumeLayout(false);
             this.Tid.ResumeLayout(false);
             this.stopUr.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -225,6 +329,14 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
