@@ -66,49 +66,69 @@ namespace MultiUr
         {           
             listView1.Items.Add(label3.Text);            
             
-
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedItem.ToString() == "Stop Ur")
-            {
-                groupBox2.Hide();
-                groupBox1.Show();
-            }
-            else if (comboBox1.SelectedItem.ToString() == "Ned Tælling")
-            { 
-                groupBox1.Hide();
-                groupBox2.Show();
-                textBox1.Text = "00:00:00:000";
-            }
-                
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            timer2.Start();
-            label3.Text = textBox1.Text;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            listView1.Items.Add(label3.Text);
-        }
-
+       
         private void stopUr_Click(object sender, EventArgs e)
         {
-
+            // Intet at se her
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            // Intet at se her heller :/
+        }
+
+        private void startTimerKnap(object sender, EventArgs e)
+        {
+           
+
+            if(textBox1.Text == "")
+            {
+                textBox1.Text = "0";
+            }
+
+            if (textBox2.Text == "")
+            {
+                textBox2.Text = "0";
+            }
+
+            if (textBox3.Text == "")
+            {
+                textBox3.Text = "0";
+            }
+
+            timer = new Timer(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox3.Text));
+
+            timer3.Start();
+            timer.stopwatch.Start();
+
+
+        }
+
+        private void stopTimerKnap(object sender, EventArgs e)
+        {
+            timer3.Stop();
+            timer.stopwatch.Stop();
+        }
+
+        Timer timer;
+        
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            TimeSpan ts = timer.ts - timer.stopwatch.Elapsed;
+
+            if (timer.ts < timer.stopwatch.Elapsed)
+            {
+                timer3.Stop();
+                timer.stopwatch.Reset();
+                MessageBox.Show("Tiden er gået");
+            }
             
+            label4.Text = ts.Hours.ToString();
+            label5.Text = ts.Minutes.ToString();
+            label6.Text = ts.Seconds.ToString();
+
+
         }
     }
 }
