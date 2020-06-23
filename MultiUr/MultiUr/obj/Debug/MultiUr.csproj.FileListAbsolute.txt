@@ -29,3 +29,5 @@ C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.exe
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.pdb
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.AlarmForm.resources
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.AlarmForm.resources
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.VækkeUr.resources
