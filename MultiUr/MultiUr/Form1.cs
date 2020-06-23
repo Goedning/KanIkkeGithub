@@ -11,6 +11,7 @@ using System.Diagnostics;
 
 namespace MultiUr
 {
+    
     public partial class Form1 : Form
     {
         
@@ -29,7 +30,7 @@ namespace MultiUr
 
         private void TidNu_Click(object sender, EventArgs e)
         {
-
+            // De lukkede er tomme, nogle var skabt ved et uheld.
         }
 
         Stopwatch StopWatch = new Stopwatch();
@@ -130,5 +131,45 @@ namespace MultiUr
 
 
         }
+
+        private void tilføjAlarmKnap(object sender, EventArgs e)
+        {
+            
+            listBox1.Items.Add("Alarm");
+        }
+
+        private void sletAlarmKnap(object sender, EventArgs e)
+        {
+            if(listBox1.SelectedIndex > -1)
+            listBox1.Items.Remove(listBox1.Items[listBox1.SelectedIndex]);
+            else
+            {
+                MessageBox.Show("Ingen alarmer valgt til at slette :/ ");
+            }
+        }
+
+        private void sletAlleAlarmerKnap(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > 0)
+                listBox1.Items.Clear();
+            else
+            {
+                MessageBox.Show("Der er ingen alarmer at slette :/ ");
+            }
+        }
+
+        private void redigerAlarmKnap(object sender, EventArgs e)
+        {
+            if(listBox1.SelectedIndex > -1)
+            {
+                AlarmForm frm = new AlarmForm(this, listBox1.SelectedIndex);
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vælg venligst en alarm :)");
+            }
+        }
+
     }
 }
