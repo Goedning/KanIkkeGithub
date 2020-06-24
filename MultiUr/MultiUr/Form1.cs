@@ -19,6 +19,8 @@ namespace MultiUr
         {
             InitializeComponent();
             timer1.Start();
+            
+            
         }
 
 
@@ -162,7 +164,7 @@ namespace MultiUr
         {
             if(listBox1.SelectedIndex > -1)
             {
-                AlarmForm frm = new AlarmForm(this, listBox1.SelectedIndex);
+                AlarmForm frm = new AlarmForm(this, listBox1, listBox1.SelectedIndex);
                 frm.Show();
             }
             else

@@ -14,17 +14,13 @@ namespace MultiUr
     {
 
         static AlarmForm form;
-        string _message;
+        string message;
 
-        public VækkeUr(AlarmForm f)
+        public VækkeUr(AlarmForm f, string message)
         {
             InitializeComponent();
             form = f;
-        }
-
-        public void message(string message)
-        {
-            _message = message;
+            this.message = message;
         }
 
         private void snoozeKnap(object sender, EventArgs e)
@@ -33,7 +29,7 @@ namespace MultiUr
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void OkKnap(object sender, EventArgs e)
         {
             this.Close();
             form.Resume();
@@ -41,7 +37,12 @@ namespace MultiUr
 
         public void VækkeUr_Shown(object sender, EventArgs e)
         {
-            richTextBox1.Text = _message;
+            richTextBox1.Text = message;
+        }
+
+        public void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
