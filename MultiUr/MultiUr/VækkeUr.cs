@@ -16,10 +16,15 @@ namespace MultiUr
         static AlarmForm form;
         string message;
 
-        public VækkeUr(AlarmForm f, string message)
+        public VækkeUr(AlarmForm f,  string message)
         {
             InitializeComponent();
             form = f;
+            this.message = message;
+        }
+
+        public VækkeUr(string message)
+        {
             this.message = message;
         }
 

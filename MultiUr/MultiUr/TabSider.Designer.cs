@@ -1,6 +1,6 @@
 ﻿namespace MultiUr
 {
-    partial class Form1
+    partial class TabSider
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,12 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Alarm = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.Timer = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -57,20 +63,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.Tid.SuspendLayout();
             this.stopUr.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.Alarm.SuspendLayout();
             this.Timer.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +88,7 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.dagsDato);
+            this.timer1.Tick += new System.EventHandler(this.DagsDato);
             // 
             // TidNu
             // 
@@ -104,14 +106,16 @@
             // 
             this.tabControl1.Controls.Add(this.Tid);
             this.tabControl1.Controls.Add(this.stopUr);
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.Alarm);
             this.tabControl1.Controls.Add(this.Timer);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(200, 75);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(4, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1115, 710);
+            this.tabControl1.Size = new System.Drawing.Size(1133, 710);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 2;
             this.tabControl1.Tag = "";
@@ -125,7 +129,7 @@
             this.Tid.Location = new System.Drawing.Point(4, 79);
             this.Tid.Name = "Tid";
             this.Tid.Padding = new System.Windows.Forms.Padding(3);
-            this.Tid.Size = new System.Drawing.Size(1107, 627);
+            this.Tid.Size = new System.Drawing.Size(1125, 627);
             this.Tid.TabIndex = 0;
             this.Tid.Text = "Nuværende Tid";
             // 
@@ -139,7 +143,7 @@
             this.stopUr.Location = new System.Drawing.Point(4, 79);
             this.stopUr.Name = "stopUr";
             this.stopUr.Padding = new System.Windows.Forms.Padding(3);
-            this.stopUr.Size = new System.Drawing.Size(1107, 627);
+            this.stopUr.Size = new System.Drawing.Size(1125, 627);
             this.stopUr.TabIndex = 1;
             this.stopUr.Text = "Stop Ur";
             this.stopUr.Click += new System.EventHandler(this.stopUr_Click);
@@ -165,7 +169,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "START";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.startStopUr);
+            this.button1.Click += new System.EventHandler(this.StartStopUr);
             // 
             // button3
             // 
@@ -195,7 +199,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "STOP";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.stopStopUr);
+            this.button2.Click += new System.EventHandler(this.StopStopUr);
             // 
             // listView1
             // 
@@ -226,6 +230,77 @@
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 4;
             // 
+            // Alarm
+            // 
+            this.Alarm.BackColor = System.Drawing.Color.RosyBrown;
+            this.Alarm.Controls.Add(this.button10);
+            this.Alarm.Controls.Add(this.button9);
+            this.Alarm.Controls.Add(this.button8);
+            this.Alarm.Controls.Add(this.button7);
+            this.Alarm.Controls.Add(this.listBox1);
+            this.Alarm.Location = new System.Drawing.Point(4, 79);
+            this.Alarm.Name = "Alarm";
+            this.Alarm.Padding = new System.Windows.Forms.Padding(3);
+            this.Alarm.Size = new System.Drawing.Size(1125, 627);
+            this.Alarm.TabIndex = 3;
+            this.Alarm.Text = "Alarm";
+            this.Alarm.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(455, 309);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(230, 139);
+            this.button10.TabIndex = 5;
+            this.button10.Text = "Rediger Alarm";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.redigerAlarmKnap);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(745, 309);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(230, 139);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "Slet Alle Alarmer";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.sletAlleAlarmerKnap);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(745, 98);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(230, 139);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Slet Alarm";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.sletAlarmKnap);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(455, 98);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(230, 135);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Tilføj Alarm";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.tilføjAlarmKnap);
+            // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 33;
+            this.listBox1.Location = new System.Drawing.Point(34, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(333, 499);
+            this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // Timer
             // 
             this.Timer.BackColor = System.Drawing.Color.RosyBrown;
@@ -245,7 +320,7 @@
             this.Timer.Location = new System.Drawing.Point(4, 79);
             this.Timer.Name = "Timer";
             this.Timer.Padding = new System.Windows.Forms.Padding(3);
-            this.Timer.Size = new System.Drawing.Size(1107, 627);
+            this.Timer.Size = new System.Drawing.Size(1125, 627);
             this.Timer.TabIndex = 2;
             this.Timer.Text = "Timer";
             // 
@@ -362,75 +437,15 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "00";
             // 
-            // tabPage1
+            // tabPage2
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.button9);
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.listBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 79);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1107, 627);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Alarm";
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(455, 309);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(230, 139);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Rediger Alarm";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.redigerAlarmKnap);
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(745, 309);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(230, 139);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Slet Alle Alarmer";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.sletAlleAlarmerKnap);
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(745, 98);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(230, 139);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Slet Alarm";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.sletAlarmKnap);
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(455, 98);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 135);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Tilføj Alarm";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.tilføjAlarmKnap);
-            // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 33;
-            this.listBox1.Location = new System.Drawing.Point(34, 38);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(333, 499);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage2.Location = new System.Drawing.Point(4, 79);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1125, 627);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "Flere Timer";
             // 
             // timer2
             // 
@@ -441,7 +456,17 @@
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // Form1
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage1.Location = new System.Drawing.Point(4, 79);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1125, 627);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "VisueltUr";
+            // 
+            // TabSider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -450,15 +475,16 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "TabSider";
             this.Text = "Ur";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.Tid.ResumeLayout(false);
             this.stopUr.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.Alarm.ResumeLayout(false);
             this.Timer.ResumeLayout(false);
             this.Timer.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,12 +521,14 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage Alarm;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 

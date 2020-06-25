@@ -21,11 +21,12 @@ namespace MultiUr
         string selectedMessage;
 
         bool snoozeSet = false;
+
         
-        Form1 f1;
+        TabSider f1;
         int index;
         ListBox lb;
-        public AlarmForm(Form1 f1, ListBox lb, int index)
+        public AlarmForm(TabSider f1, ListBox lb, int index)
         {
             this.f1 = f1;
             this.index = index;
@@ -37,9 +38,11 @@ namespace MultiUr
             UpdateData();
         }
 
+
+
         string message;
 
-        Form1 form1 = new Form1();
+        TabSider form1 = new TabSider();
         public void lavAlarmKnap(object sender, EventArgs e)
         {
             selectedTime = comboBox1.Text + ":" + comboBox2.Text;
@@ -71,7 +74,7 @@ namespace MultiUr
             f1.listBox1.Items[index] = index;
         }
 
-        private void UpdateData()
+        public void UpdateData()
         {
             // For time combobox
             for (int i = 0; i < 24; i++) { comboBox1.Items.Add(string.Format("{0:#}", i )); }
@@ -84,12 +87,12 @@ namespace MultiUr
             comboBox3.Items.Add("15");
         }
 
-        private void tidNuForm2(object sender, EventArgs e)
+        public void TidNuForm2(object sender, EventArgs e)
         {            
             // Jeg er et label
         }
 
-        private void timerIForms2(object sender, EventArgs e)
+        public void timerIForms2(object sender, EventArgs e)        
         {
             DateTime time = DateTime.Now;
             tidNuForms2.Text = time.ToString();
@@ -100,7 +103,7 @@ namespace MultiUr
                 if (txtTime == selectedTime)
                 {
                     VækkeUr vækkeur = new VækkeUr(this, message);
-                    vækkeur.Show();                    
+                    vækkeur.Show();
                     alarmSet = false;
                 }
             }

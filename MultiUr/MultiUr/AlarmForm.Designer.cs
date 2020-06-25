@@ -54,7 +54,7 @@
             this.tidNuForms2.TabIndex = 2;
             this.tidNuForms2.Text = "LoL du burde ikke se det her :))))";
             this.tidNuForms2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tidNuForms2.Click += new System.EventHandler(this.tidNuForm2);
+            this.tidNuForms2.Click += new System.EventHandler(this.TidNuForm2);
             // 
             // timer1
             // 
@@ -190,17 +190,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label tidNuForms2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.Label tidNuForms2;
     }
 }

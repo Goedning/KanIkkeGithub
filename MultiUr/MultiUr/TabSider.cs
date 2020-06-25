@@ -12,19 +12,24 @@ using System.Diagnostics;
 namespace MultiUr
 {
     
-    public partial class Form1 : Form
+    public partial class TabSider : Form
     {
         
-        public Form1()
+        public TabSider()
         {
             InitializeComponent();
-            timer1.Start();
+            timer1.Start();           
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             
         }
 
 
-        private void dagsDato(object sender, EventArgs e)
+
+        private void DagsDato(object sender, EventArgs e)
         {
             DateTime time = DateTime.Now;
             this.TidNu.Text = time.ToString();
@@ -45,14 +50,14 @@ namespace MultiUr
 
         }
 
-        private void startStopUr(Object sender, EventArgs e)
+        private void StartStopUr(Object sender, EventArgs e)
         {
             
             timer2.Start();
             StopWatch.Start();
         }
 
-        private void stopStopUr(Object sender, EventArgs e)
+        private void StopStopUr(Object sender, EventArgs e)
         {
             timer2.Stop();
             StopWatch.Stop();
@@ -171,11 +176,19 @@ namespace MultiUr
             {
                 MessageBox.Show("Vælg venligst en alarm :)");
             }
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -22,7 +22,6 @@ C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.exe
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\bin\Debug\MultiUr.pdb
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csprojAssemblyReference.cache
-C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.Form1.resources
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.Properties.Resources.resources
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.GenerateResource.cache
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.csproj.CoreCompileInputs.cache
@@ -32,3 +31,4 @@ C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.AlarmForm.resources
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.VækkeUr.resources
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.VækkeUr.resources
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\MultiUr\MultiUr\obj\Debug\MultiUr.TabSider.resources
