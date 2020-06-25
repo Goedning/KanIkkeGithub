@@ -8,25 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MultiUr
 {
     
     public partial class TabSider : Form
     {
-        
+        public string tidTilMineTimer;
+
+
         public TabSider()
         {
-            InitializeComponent();
-            timer1.Start();           
             
+            InitializeComponent();
+            timer1.Start();
+
+            Opdatering();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
         }
-
 
 
         private void DagsDato(object sender, EventArgs e)
@@ -120,7 +124,8 @@ namespace MultiUr
         }
 
         Timer timer;
-        
+        private int index;
+
         private void timer3_Tick(object sender, EventArgs e)
         {
             TimeSpan ts = timer.ts - timer.stopwatch.Elapsed;
@@ -179,6 +184,31 @@ namespace MultiUr
             
         }
 
+        public void Opdatering()
+        {
+            for (int i = 0; i < 24; i++) { comboBox1.Items.Add(string.Format("{0:#}", i)); }
+
+            for (int i = 0; i < 60; i++) { comboBox2.Items.Add(string.Format("{0:#}", i)); }
+
+            for (int i = 0; i < 60; i++) { comboBox3.Items.Add(string.Format("{0:#}", i)); }
+
+            if (comboBox1.Text == "")
+            {
+                comboBox1.Text = "00";
+            }
+
+            if (comboBox2.Text == "")
+            {
+                comboBox2.Text = "00";
+            }
+
+            if (comboBox3.Text == "")
+            {
+                comboBox3.Text = "00";
+            }
+
+        }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -189,6 +219,67 @@ namespace MultiUr
 
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Add("Timer");
+        }
 
+        private void SletTimer(object sender, EventArgs e)
+        {
+            if (listBox2.SelectedIndex > -1)
+                listBox2.Items.Remove(listBox2.Items[listBox2.SelectedIndex]);
+            else
+            {
+                MessageBox.Show("Ingen Timer valgt at slette ");
+            }
+
+        }
+
+        private void SætEnTimer(object sender, EventArgs e)
+        {
+
+            if (listBox2.SelectedIndex > -1)
+            {
+
+
+                tidTilMineTimer = comboBox1.Text + ":" + comboBox2.Text + ":" + comboBox3.Text;
+                listBox2.Items[index] = tidTilMineTimer;
+                int selectedItem = listBox2.SelectedIndex;
+                listBox2.Items.RemoveAt(index);
+                listBox2.Items.Insert(index, tidTilMineTimer);
+            }
+            else
+            {
+                MessageBox.Show("Lele");
+            }
+
+            
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabSider_Shown(object sender, EventArgs e)
+        {
+           
+        }
+       
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            RomerTal romer = new RomerTal();
+
+            DateTime time = DateTime.Now;
+            label14.Text = time.ToString();
+
+            romer.NumberToRoman(Convert.ToInt32(label15.Text));
+                        
+        }
     }
 }

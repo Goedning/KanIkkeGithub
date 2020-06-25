@@ -64,15 +64,30 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Tim = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.Tid.SuspendLayout();
             this.stopUr.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Alarm.SuspendLayout();
             this.Timer.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -371,6 +386,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 31);
             this.textBox1.TabIndex = 10;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // button6
             // 
@@ -440,12 +456,150 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage2.Controls.Add(this.comboBox3);
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.Tim);
+            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.button11);
+            this.tabPage2.Controls.Add(this.listBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 79);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1125, 627);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Flere Timer";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(288, 533);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(79, 33);
+            this.comboBox3.TabIndex = 12;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(175, 533);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(79, 33);
+            this.comboBox2.TabIndex = 11;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(54, 533);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(79, 33);
+            this.comboBox1.TabIndex = 10;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(793, 44);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(143, 139);
+            this.button13.TabIndex = 9;
+            this.button13.Text = "SletTimer";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.SletTimer);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(260, 533);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 25);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "S";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(139, 533);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(30, 25);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "M";
+            // 
+            // Tim
+            // 
+            this.Tim.AutoSize = true;
+            this.Tim.Location = new System.Drawing.Point(23, 533);
+            this.Tim.Name = "Tim";
+            this.Tim.Size = new System.Drawing.Size(25, 25);
+            this.Tim.TabIndex = 6;
+            this.Tim.Text = "T";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(391, 533);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(98, 35);
+            this.button12.TabIndex = 2;
+            this.button12.Text = "Sæt Tid";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.SætEnTimer);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(567, 44);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(143, 139);
+            this.button11.TabIndex = 1;
+            this.button11.Text = "Tilføj Timer";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 29;
+            this.listBox2.Location = new System.Drawing.Point(54, 44);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listBox2.Size = new System.Drawing.Size(313, 439);
+            this.listBox2.TabIndex = 0;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Location = new System.Drawing.Point(4, 79);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1125, 627);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "VisueltUr";
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Control;
+            this.label15.Location = new System.Drawing.Point(200, 126);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(642, 279);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "1";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.Control;
+            this.label14.Location = new System.Drawing.Point(28, 12);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(187, 33);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "label14";
             // 
             // timer2
             // 
@@ -456,28 +610,24 @@
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // tabPage1
+            // timer4
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage1.Location = new System.Drawing.Point(4, 79);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1125, 627);
-            this.tabPage1.TabIndex = 5;
-            this.tabPage1.Text = "VisueltUr";
+            this.timer4.Enabled = true;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
             // TabSider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1139, 734);
+            this.ClientSize = new System.Drawing.Size(1142, 734);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "TabSider";
             this.Text = "Ur";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.TabSider_Shown);
             this.tabControl1.ResumeLayout(false);
             this.Tid.ResumeLayout(false);
             this.stopUr.ResumeLayout(false);
@@ -485,6 +635,9 @@
             this.Alarm.ResumeLayout(false);
             this.Timer.ResumeLayout(false);
             this.Timer.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -529,6 +682,19 @@
         public System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label Tim;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Label label15;
     }
 }
 

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RomerTal.cs" />
     <Compile Include="TabSider.cs">
       <SubType>Form</SubType>
     </Compile>
