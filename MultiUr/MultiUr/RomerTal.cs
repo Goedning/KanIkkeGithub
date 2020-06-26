@@ -9,7 +9,7 @@ namespace MultiUr
     public class RomerTal
     {
         
-        public string NumberToRoman(int number)
+        public string NumberToRoman(int number) //Visuelle Ur, her laver vi arrays og giver tal nye værdier
         {
             
             if (number < 0 || number > 60)
@@ -24,7 +24,7 @@ namespace MultiUr
             StringBuilder result = new StringBuilder();
 
             
-            for (int i = 0; i < 13; i++)
+            for (int i = 0; i < 8; i++)
             {
                 
                 while (number >= values[i])

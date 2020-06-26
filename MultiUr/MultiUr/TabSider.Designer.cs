@@ -64,6 +64,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button14 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -80,6 +81,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.Tid.SuspendLayout();
             this.stopUr.SuspendLayout();
@@ -161,7 +163,7 @@
             this.stopUr.Size = new System.Drawing.Size(1125, 627);
             this.stopUr.TabIndex = 1;
             this.stopUr.Text = "Stop Ur";
-            this.stopUr.Click += new System.EventHandler(this.stopUr_Click);
+            this.stopUr.Click += new System.EventHandler(this.StopUr_Click);
             // 
             // groupBox1
             // 
@@ -194,7 +196,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "RESET";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.resetStopUr);
+            this.button3.Click += new System.EventHandler(this.ResetStopUr);
             // 
             // button4
             // 
@@ -204,7 +206,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "MARKER";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.markerStopUr);
+            this.button4.Click += new System.EventHandler(this.MarkerStopUr);
             // 
             // button2
             // 
@@ -259,7 +261,7 @@
             this.Alarm.Size = new System.Drawing.Size(1125, 627);
             this.Alarm.TabIndex = 3;
             this.Alarm.Text = "Alarm";
-            this.Alarm.Click += new System.EventHandler(this.tabPage1_Click);
+            this.Alarm.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // button10
             // 
@@ -270,7 +272,7 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "Rediger Alarm";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.redigerAlarmKnap);
+            this.button10.Click += new System.EventHandler(this.RedigerAlarmKnap);
             // 
             // button9
             // 
@@ -281,7 +283,7 @@
             this.button9.TabIndex = 4;
             this.button9.Text = "Slet Alle Alarmer";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.sletAlleAlarmerKnap);
+            this.button9.Click += new System.EventHandler(this.SletAlleAlarmerKnap);
             // 
             // button8
             // 
@@ -292,7 +294,7 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Slet Alarm";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.sletAlarmKnap);
+            this.button8.Click += new System.EventHandler(this.SletAlarmKnap);
             // 
             // button7
             // 
@@ -303,7 +305,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "Tilføj Alarm";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.tilføjAlarmKnap);
+            this.button7.Click += new System.EventHandler(this.TilføjAlarmKnap);
             // 
             // listBox1
             // 
@@ -314,7 +316,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(333, 499);
             this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
             // Timer
             // 
@@ -386,7 +388,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 31);
             this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged_1);
             // 
             // button6
             // 
@@ -396,7 +398,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "Stop";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.stopTimerKnap);
+            this.button6.Click += new System.EventHandler(this.StopTimerKnap);
             // 
             // button5
             // 
@@ -406,7 +408,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Start";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.startTimerKnap);
+            this.button5.Click += new System.EventHandler(this.StartTimerKnap);
             // 
             // label8
             // 
@@ -456,6 +458,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage2.Controls.Add(this.button14);
             this.tabPage2.Controls.Add(this.comboBox3);
             this.tabPage2.Controls.Add(this.comboBox2);
             this.tabPage2.Controls.Add(this.comboBox1);
@@ -473,8 +476,19 @@
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Flere Timer";
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(567, 319);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(171, 164);
+            this.button14.TabIndex = 13;
+            this.button14.Text = "Start Timer";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.StartTimerFraListeKnap);
+            // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(288, 533);
             this.comboBox3.Name = "comboBox3";
@@ -483,6 +497,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(175, 533);
             this.comboBox2.Name = "comboBox2";
@@ -491,6 +506,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(54, 533);
             this.comboBox1.Name = "comboBox1";
@@ -499,9 +515,9 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(793, 44);
+            this.button13.Location = new System.Drawing.Point(809, 44);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(143, 139);
+            this.button13.Size = new System.Drawing.Size(168, 173);
             this.button13.TabIndex = 9;
             this.button13.Text = "SletTimer";
             this.button13.UseVisualStyleBackColor = true;
@@ -548,11 +564,11 @@
             // 
             this.button11.Location = new System.Drawing.Point(567, 44);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(143, 139);
+            this.button11.Size = new System.Drawing.Size(171, 173);
             this.button11.TabIndex = 1;
             this.button11.Text = "Tilføj Timer";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.ViTilføjerTilVoresListeKnap);
             // 
             // listBox2
             // 
@@ -564,7 +580,7 @@
             this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox2.Size = new System.Drawing.Size(313, 439);
             this.listBox2.TabIndex = 0;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.ListBox2_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -583,9 +599,9 @@
             this.label15.BackColor = System.Drawing.Color.Black;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(200, 126);
+            this.label15.Location = new System.Drawing.Point(109, 159);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(642, 279);
+            this.label15.Size = new System.Drawing.Size(843, 279);
             this.label15.TabIndex = 1;
             this.label15.Text = "1";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -600,6 +616,7 @@
             this.label14.Size = new System.Drawing.Size(187, 33);
             this.label14.TabIndex = 0;
             this.label14.Text = "label14";
+            this.label14.Visible = false;
             // 
             // timer2
             // 
@@ -608,12 +625,16 @@
             // timer3
             // 
             this.timer3.Interval = 1000;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            this.timer3.Tick += new System.EventHandler(this.Timer3_Tick);
             // 
             // timer4
             // 
             this.timer4.Enabled = true;
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            this.timer4.Tick += new System.EventHandler(this.Timer4_Tick);
+            // 
+            // timer5
+            // 
+            this.timer5.Tick += new System.EventHandler(this.Timer5_Tick);
             // 
             // TabSider
             // 
@@ -695,6 +716,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Timer timer5;
     }
 }
 

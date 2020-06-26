@@ -7,16 +7,19 @@ using System.Threading.Tasks;
 
 namespace MultiUr
 {
-    public class Timer
+    public class MyTimer
     {
         public TimeSpan ts;
 
-        public Stopwatch stopwatch= new Stopwatch();
+        public Stopwatch stopwatch;
+
+        public TimeSpan Remaining { get => ts - stopwatch.Elapsed; }
 
 
-        public Timer(int hours, int minutes, int seconds)
+        public MyTimer(int hours, int minutes, int seconds)
         {
             ts = new TimeSpan(hours, minutes, seconds);
+            stopwatch = new Stopwatch();
         }
        
 

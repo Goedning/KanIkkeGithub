@@ -45,7 +45,7 @@ namespace MultiUr
         TabSider form1 = new TabSider();
         public void lavAlarmKnap(object sender, EventArgs e)
         {
-            selectedTime = comboBox1.Text + ":" + comboBox2.Text;
+            selectedTime = comboBox1.Text + ":" + comboBox2.Text; //Her sætter vi de mange forskellige værdier og sætter vores alarm
             selectedSnooze = comboBox3.Text;
             selectedMessage = textBox1.Text;
 
@@ -102,7 +102,7 @@ namespace MultiUr
             {
                 if (txtTime == selectedTime)
                 {
-                    VækkeUr vækkeur = new VækkeUr(this, message);
+                    VækkeUr vækkeur = new VækkeUr(this, message); //Vækkeur pop up, når tiden vi har valgt er = DateTime.Now, eller txtTime som jeg har valgt at bruge
                     vækkeur.Show();
                     alarmSet = false;
                 }
@@ -137,7 +137,7 @@ namespace MultiUr
 
 
         public void Snooze()
-        {
+        { //I Snooze laver vi en ny timespan hvor vi lægger mere tid i vores alarm (Jeg skal arbejde på mine beskrivelser)
             DateTime dateTime = DateTime.Now;
             TimeSpan timeSpan = new TimeSpan(0, Convert.ToInt32(selectedSnooze), 0);
             snoozeTime = dateTime.Add(timeSpan).ToString("h:mm");
