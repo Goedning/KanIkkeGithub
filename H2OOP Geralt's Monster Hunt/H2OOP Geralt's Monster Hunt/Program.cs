@@ -13,26 +13,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         // Toss a Coin to the witcher?        
     }
 
-    class Velkommen
-    {
 
-        public void velkomst()
-        {
-
-            Console.WriteLine("Toss A Coin To Your Witcher? y/n");
-            
-            if(input == "n")
-            {
-
-            }
-            else if(input == "y")
-            {
-
-            }
-
-
-        }
-    }
 
     class MonsterListe
     {
@@ -49,7 +30,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         {
            
             
-            // navne.Remove(navn);
+             navne.Remove(navn);
         }
 
         public List<Monster> Getnavne()

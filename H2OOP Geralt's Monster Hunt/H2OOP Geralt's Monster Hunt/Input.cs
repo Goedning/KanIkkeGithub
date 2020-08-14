@@ -10,6 +10,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         {
             UserInput ui = new UserInput();
             ui.start();
+            
         }
 
     }
