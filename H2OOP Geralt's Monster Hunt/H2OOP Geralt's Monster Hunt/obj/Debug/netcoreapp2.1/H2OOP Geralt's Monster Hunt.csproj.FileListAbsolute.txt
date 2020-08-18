@@ -9,3 +9,14 @@ C:\Users\45296\source\repos\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster H
 C:\Users\45296\source\repos\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.pdb
 C:\Users\45296\source\repos\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.dll
 C:\Users\45296\source\repos\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.pdb
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.deps.json
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.runtimeconfig.json
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.runtimeconfig.dev.json
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.dll
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\bin\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.pdb
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.csprojAssemblyReference.cache
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.csproj.CoreCompileInputs.cache
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.AssemblyInfoInputs.cache
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.AssemblyInfo.cs
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.dll
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Debug\netcoreapp2.1\H2OOP Geralt's Monster Hunt.pdb

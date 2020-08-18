@@ -9,8 +9,8 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         static void Main(string[] args)
         {
             UserInput ui = new UserInput();
-            ui.start();
-            
+            ui.velkomst();
+            Console.ReadKey();
         }
 
     }

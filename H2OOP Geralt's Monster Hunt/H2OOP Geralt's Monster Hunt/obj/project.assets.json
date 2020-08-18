@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\45296\\source\\repos\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
+      "projectUniqueName": "C:\\Users\\45296\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
       "projectName": "H2OOP Geralt's Monster Hunt",
-      "projectPath": "C:\\Users\\45296\\source\\repos\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
+      "projectPath": "C:\\Users\\45296\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
       "packagesPath": "C:\\Users\\45296\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\45296\\source\\repos\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\obj\\",
+      "outputPath": "C:\\Users\\45296\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
