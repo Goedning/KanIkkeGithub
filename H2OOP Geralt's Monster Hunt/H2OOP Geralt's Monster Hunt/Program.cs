@@ -10,32 +10,42 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         // Tilføj flere sjove variabler folk de sådan elsker
         public string Navn { get; set; }
         public string Kendetegn { get; set; }
-        public int Antal { get; set; }
-        // Toss a Coin to the witcher?        
+        public string Antal { get; set; }
+        // Toss a Coin to the witcher?
+        public Monster(string name, string b, string antal)
+        {
+            Navn = name;
+            Kendetegn = b;
+            Antal = antal;
+        }
+        public Monster()
+        {
+
+        }
     }
 
 
     class MonsterListe //B
     {
-        public List<Monster> navne = new List<Monster>();
+        public List<Monster> monster = new List<Monster>();
 
         
-        public void Add(Monster navn)
+        public void Add(Monster monster)
         {
                        
-            navne.Add(navn);
+            this.monster.Add(monster);
         }
 
-        public void Remove(Monster navn)
+        public void Remove(Monster monster)
         {
                       
-             navne.Remove(navn);
+             this.monster.Remove(monster);
         }
 
-        public List<Monster> Getnavne()
+        public List<Monster> Getmonster()
         {
                        
-            return navne;
+            return monster;
         }
 
         
@@ -44,6 +54,15 @@ namespace H2OOP_Geralt_s_Monster_Hunt
     class MonsterController // C
     {
         public MonsterListe list = new MonsterListe();
+        public void Insertmonster(Monster monster)
+        {
+            list.Add(monster);
+        }
+        public void Removemonster(Monster monster)
+        {
+            list.Remove(monster);
+        }
+
     }
 
 }
