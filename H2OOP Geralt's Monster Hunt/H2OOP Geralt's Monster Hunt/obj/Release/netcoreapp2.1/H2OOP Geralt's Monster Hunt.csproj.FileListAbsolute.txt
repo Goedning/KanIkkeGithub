@@ -8,4 +8,3 @@ C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP 
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Release\netcoreapp2.1\H2OOP Geralt's Monster Hunt.AssemblyInfo.cs
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Release\netcoreapp2.1\H2OOP Geralt's Monster Hunt.dll
 C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Release\netcoreapp2.1\H2OOP Geralt's Monster Hunt.pdb
-C:\Users\45296\Documents\GitHub\KanIkkeGithub\H2OOP Geralt's Monster Hunt\H2OOP Geralt's Monster Hunt\obj\Release\netcoreapp2.1\H2OOP Geralt's Monster Hunt.csprojAssemblyReference.cache
