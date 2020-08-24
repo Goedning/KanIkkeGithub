@@ -53,50 +53,49 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                 {
                     case ConsoleKey.D1:
                         Console.Clear();
-                        monster = new Monster("Doppler", "Ingenting", "1");
-                        Console.WriteLine("NAVN:  " + monster.Navn);
-                        Console.WriteLine("KENDETEGN:  " + monster.Kendetegn);
-                        Console.WriteLine("ANTAL:  " + monster.Antal);
+                        monster = new Monster("Doppler", "KENDETEGN: Ingenting ", "ANTAL: 1");
+                        Console.WriteLine(monster.Navn);
+                        Console.WriteLine(monster.Kendetegn);
+                        Console.WriteLine(monster.Antal);
                         Console.WriteLine();
                         Console.WriteLine("DESC: Doppler er utrolige milde væsne, de har hverken kløer eller hugtænder, de kan dog kompenser med deres evne til at skifte udsende på et level hvor det er umuligt at se forskel. Dette gør dem også utrolig frygtet blandt mennesker, sidende kan efterligne dit udsende og alle deres fremtidige handlinger kan falde på dig, doppler efterligner os dog ikke for at gøre nogle fortræd, men i stedet fordi det er nemmere at lever i de indre byer i fred. ");
                         Console.WriteLine();
                         break;
                     case ConsoleKey.D2:
                         Console.Clear();
-                        monster = new Monster("Ghoul", "Uintelligent. Jagter i flok. Spiser de døde. Hænger ofte omkring slagsmarker", "5-500");
-                        Console.WriteLine("NAVN:  " + monster.Navn);
-                        Console.WriteLine("KENDETEGN:  " + monster.Kendetegn);
-                        Console.WriteLine("ANTAL:  " + monster.Antal);
-                        Console.WriteLine();
+                        monster = new Monster("Ghoul", "KENDETEGN: Uintelligent. Jagter i flok. Spiser de døde. Hænger ofte omkring slagsmarker", "ANTAL: 5-100");
+                        Console.WriteLine(monster.Navn);
+                        Console.WriteLine(monster.Kendetegn);
+                        Console.WriteLine(monster.Antal);
                         Console.WriteLine("DESC: Ghoulds er hæslige væsner, med en stærk næse, men svage øjne. De spiser med glæde alle skabninger de kan få deres kløer på, både levne og døde, de bor dybt under jorden i kompakte huller. ");
                         Console.WriteLine();
                         break;
                     case ConsoleKey.D3:
                         Console.Clear();
-                        monster = new Monster("Bruxa", "Smuk kvinde ligende. Blod tørstig. Hader lugten af løg. Vampyr", "1-5");
-                        Console.WriteLine("NAVN:  " + monster.Navn);
-                        Console.WriteLine("KENDETEGN:  " + monster.Kendetegn);
-                        Console.WriteLine("ANTAL:  " + monster.Antal);
+                        monster = new Monster("Bruxa", "KENDETEGN:  Smuk kvinde ligende. Blod tørstig. Hader lugten af løg. Vampyr", "ANTAL 1-5, de kan gå både alene og i små grupper");
+                        Console.WriteLine(monster.Navn);
+                        Console.WriteLine(monster.Kendetegn);
+                        Console.WriteLine(monster.Antal);
                         Console.WriteLine();
                         Console.WriteLine("DESC: ");
                         Console.WriteLine();
                         break;
                     case ConsoleKey.D4:
                         Console.Clear();
-                        monster = new Monster("Kikimora", "Svampe & Skov boende. Vil angribe alt der kommer nær. Flere typer, arbejde, soldat og dronning", "20-1000");
-                        Console.WriteLine("NAVN:  " + monster.Navn);
-                        Console.WriteLine("KENDETEGN:  " + monster.Kendetegn);
-                        Console.WriteLine("ANTAL:  " + monster.Antal);
+                        monster = new Monster("Kikimora", "KENDETEGN: Svampe & Skov boende. Vil angribe alt der kommer nær. Flere typer, arbejde, soldat og dronning", "ANTAL: 10-500");
+                        Console.WriteLine(monster.Navn);
+                        Console.WriteLine(monster.Kendetegn);
+                        Console.WriteLine(monster.Antal);
                         Console.WriteLine();
                         Console.WriteLine("DESC: ");
                         Console.WriteLine();
                         break;
                     case ConsoleKey.D5:
                         Console.Clear();
-                        monster = new Monster("Drage", "...Det er en drage...", "1-3");
-                        Console.WriteLine("NAVN:  " + monster.Navn);
-                        Console.WriteLine("KENDETEGN:  " + monster.Kendetegn);
-                        Console.WriteLine("ANTAL:  " + monster.Antal);
+                        monster = new Monster("Drage", "KENDETEGN: ...Det er en drage...", "ANTAL: 1-3");
+                        Console.WriteLine(monster.Navn);
+                        Console.WriteLine(monster.Kendetegn);
+                        Console.WriteLine(monster.Antal);
                         Console.WriteLine();
                         Console.WriteLine("DESC: ");
                         Console.WriteLine();
@@ -109,7 +108,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                         break;
                 }
                 monsterController.Insertmonster(monster);
-                //monsterController.Removemonster(monster);
+                
                 Console.WriteLine("For at retuner til start Tryk 1.");
                 tast1 = Console.ReadKey(true);
 
@@ -128,6 +127,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                 Console.WriteLine("1) Tilføj flere monstre");
                 Console.WriteLine("2) Fjern et monster fra listen");
                 Console.WriteLine("3) Se min to kill list i dag");
+                Console.WriteLine("4) Opdater Kendetegn");
 
                 tast1 = Console.ReadKey(true);
                 switch (tast1.Key)
@@ -138,11 +138,15 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                         break;
                     case ConsoleKey.D2:
                         Console.Clear();
-                        Console.WriteLine("Debug");
+                        Deletefromlist();
                         break;
                     case ConsoleKey.D3:
                         Console.Clear();
                         Minliste();
+                        break;
+                    case ConsoleKey.D4:
+                        Console.Clear();
+                        Updatering();
                         break;
                     default:
                         break;
@@ -154,15 +158,16 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         public void Minliste()
         {
             Console.WriteLine("Her kan vi se de nuværende monstre vi skal efter");
-            Console.WriteLine();
             Console.WriteLine("Når du er færdig her så tryk 1 for at komme tilbage.");
+            Console.WriteLine();
 
             foreach (Monster monster in monsterController.list.monster)
             {
 
-                Console.Write(monster.Navn);
+                Console.WriteLine(monster.Navn);
                 Console.WriteLine(monster.Kendetegn);
                 Console.WriteLine(monster.Antal);
+                Console.WriteLine();
             }
             ConsoleKeyInfo tast1 = Console.ReadKey(true);
             switch (tast1.Key)
@@ -175,6 +180,42 @@ namespace H2OOP_Geralt_s_Monster_Hunt
 
 
         }
+        public void Deletefromlist()
+        {
+            Console.WriteLine("Indtast navnet på monsteret der skal væk");
+            Console.WriteLine();
+            
+
+            foreach (Monster monster in monsterController.list.monster)
+            {
+
+                Console.WriteLine(monster.Navn);
+                Console.WriteLine(monster.Kendetegn);
+                Console.WriteLine(monster.Antal);
+                Console.WriteLine();
+                
+            }
+            
+            monsterController.list.Remove(monsterController.list.monster.Find(Monster => Monster.Navn == Console.ReadLine()));
+            
+            
+        }
+        public void Updatering()
+        {
+            Console.WriteLine("Her kan vi opdater vores kendetegn");
+            Console.WriteLine("Skriv navnet ind på det monster hvis kendetegn skal redigeres(Case sensetive)");
+
+
+            foreach (Monster monster in monsterController.list.monster)
+            {
+                Console.WriteLine($"{monster.Navn}: {monster.Kendetegn}");
+
+               
+            }
+
+           var DetValgteMonster = monsterController.list.monster.Find(Monster => Monster.Navn == Console.ReadLine());
+            DetValgteMonster.Kendetegn = Console.ReadLine();            
+        }
 
     }
-}
+}   // Mange Tak til mine konsulenter Daniel, Nikolai & Lasse
