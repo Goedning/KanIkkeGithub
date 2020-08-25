@@ -108,7 +108,7 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                         break;
                 }
                 monsterController.Insertmonster(monster);
-                
+
                 Console.WriteLine("For at retuner til start Tryk 1.");
                 tast1 = Console.ReadKey(true);
 
@@ -125,9 +125,10 @@ namespace H2OOP_Geralt_s_Monster_Hunt
             {
 
                 Console.WriteLine("1) Tilføj flere monstre");
-                Console.WriteLine("2) Fjern et monster fra listen");
-                Console.WriteLine("3) Se min to kill list i dag");
-                Console.WriteLine("4) Opdater Kendetegn");
+                Console.WriteLine("2) Tilføj flere fjender");
+                Console.WriteLine("3) Fjern et monster fra listen");
+                Console.WriteLine("4) Se min to kill list i dag");
+                Console.WriteLine("5) Opdater Kendetegn");
 
                 tast1 = Console.ReadKey(true);
                 switch (tast1.Key)
@@ -138,13 +139,17 @@ namespace H2OOP_Geralt_s_Monster_Hunt
                         break;
                     case ConsoleKey.D2:
                         Console.Clear();
-                        Deletefromlist();
+                        Tilføjmennesker();
                         break;
                     case ConsoleKey.D3:
                         Console.Clear();
-                        Minliste();
+                        Deletefromlist();
                         break;
                     case ConsoleKey.D4:
+                        Console.Clear();
+                        Minliste();
+                        break;
+                    case ConsoleKey.D5:
                         Console.Clear();
                         Updatering();
                         break;
@@ -161,12 +166,14 @@ namespace H2OOP_Geralt_s_Monster_Hunt
             Console.WriteLine("Når du er færdig her så tryk 1 for at komme tilbage.");
             Console.WriteLine();
 
-            foreach (Monster monster in monsterController.list.monster)
+            foreach (IKillable hoy in monsterController.list.Getmonster())
             {
 
-                Console.WriteLine(monster.Navn);
-                Console.WriteLine(monster.Kendetegn);
-                Console.WriteLine(monster.Antal);
+                Console.WriteLine(hoy.Navn);
+                Console.WriteLine(hoy.Kendetegn);
+                Console.WriteLine(hoy.Antal);
+                Console.WriteLine(hoy.Grim);
+                Console.WriteLine(hoy.Forbrydelse);
                 Console.WriteLine();
             }
             ConsoleKeyInfo tast1 = Console.ReadKey(true);
@@ -184,38 +191,119 @@ namespace H2OOP_Geralt_s_Monster_Hunt
         {
             Console.WriteLine("Indtast navnet på monsteret der skal væk");
             Console.WriteLine();
-            
 
-            foreach (Monster monster in monsterController.list.monster)
+
+            foreach (IKillable hoy in monsterController.list.Getmonster())
             {
 
-                Console.WriteLine(monster.Navn);
-                Console.WriteLine(monster.Kendetegn);
-                Console.WriteLine(monster.Antal);
+                Console.WriteLine(hoy.Navn);
+                Console.WriteLine(hoy.Kendetegn);
+                Console.WriteLine(hoy.Antal);
+                Console.WriteLine(hoy.Grim);
+                Console.WriteLine(hoy.Forbrydelse);
                 Console.WriteLine();
-                
+
+
             }
-            
-            monsterController.list.Remove(monsterController.list.monster.Find(Monster => Monster.Navn == Console.ReadLine()));
-            
-            
+
+            monsterController.list.Remove(monsterController.list.Getmonster().Find(Monster => Monster.Navn == Console.ReadLine()));
+
+
         }
         public void Updatering()
         {
             Console.WriteLine("Her kan vi opdater vores kendetegn");
             Console.WriteLine("Skriv navnet ind på det monster hvis kendetegn skal redigeres(Case sensetive)");
+            Console.WriteLine();
 
-
-            foreach (Monster monster in monsterController.list.monster)
+            foreach (IKillable hoy in monsterController.list.Getmonster())
             {
-                Console.WriteLine($"{monster.Navn}: {monster.Kendetegn}");
+                Console.WriteLine($"{hoy.Navn}: {hoy.Kendetegn}: {hoy.Grim}");
+                Console.WriteLine();
 
-               
             }
 
-           var DetValgteMonster = monsterController.list.monster.Find(Monster => Monster.Navn == Console.ReadLine());
-            DetValgteMonster.Kendetegn = Console.ReadLine();            
-        }
+            var DetValgteMonster = monsterController.list.Getmonster().Find(Monster => Monster.Navn == Console.ReadLine());
+            DetValgteMonster.Kendetegn = Console.ReadLine();
 
+
+        }
+        public void Tilføjmennesker()
+        {
+
+
+            bool letsKeepGoing = true;
+            while (letsKeepGoing)
+            {
+                Console.WriteLine("Witcheren Geralt dræbte ikke normal mennesker, men i dag var en undataglse for hans fjende!");
+                Console.WriteLine("1) The Common Bandit");
+                Console.WriteLine("2) Poul Præmiephysco");
+                Console.WriteLine("3) Emil");
+                Console.WriteLine("4) Kim Jong Un");
+                Console.WriteLine("5) Jeg er færdig for nu");
+
+                ConsoleKeyInfo tast1 = Console.ReadKey(true);
+                Fjender fjender = new Fjender();
+
+                switch (tast1.Key)
+                {
+                    case ConsoleKey.D1:
+                        Console.Clear();
+                        fjender = new Fjender("The Common Bandit", "GRIM: Meget ", "Forbrydelse: Han prøvede at stjæle mine lommepenge!");
+                        Console.WriteLine(fjender.Navn);
+                        Console.WriteLine(fjender.Grim);
+                        Console.WriteLine(fjender.Forbrydelse);
+                        Console.WriteLine();
+                        Console.WriteLine("DESC:");
+                        Console.WriteLine();
+                        break;
+                    case ConsoleKey.D2:
+                        Console.Clear();
+                        fjender = new Fjender("Poul Præmiephysco", "GRIM: 7.43", "Forbrydelse: Han satte ild til den lokale kirke og sparkede en drenge spejder");
+                        Console.WriteLine(fjender.Navn);
+                        Console.WriteLine(fjender.Grim);
+                        Console.WriteLine(fjender.Forbrydelse);
+                        Console.WriteLine("DESC:");
+                        Console.WriteLine();
+                        break;
+                    case ConsoleKey.D3:
+                        Console.Clear();
+                        fjender = new Fjender("Emil", "GRIM: 22%", "Forbrydelse: Han snakkede grimt om min kode");
+                        Console.WriteLine(fjender.Navn);
+                        Console.WriteLine(fjender.Grim);
+                        Console.WriteLine(fjender.Forbrydelse);
+                        Console.WriteLine();
+                        Console.WriteLine("DESC:");
+                        Console.WriteLine();
+                        break;
+                    case ConsoleKey.D4:
+                        Console.Clear();
+                        fjender = new Fjender("Kim Jong Un", "GRIM: Ca. Meget", "Forbrdelse: Ond diktator, kan lide at true med farlige våben");
+                        Console.WriteLine(fjender.Navn);
+                        Console.WriteLine(fjender.Grim);
+                        Console.WriteLine(fjender.Forbrydelse);
+                        Console.WriteLine();
+                        Console.WriteLine("DESC:");
+                        Console.WriteLine();
+                        break;
+                    case ConsoleKey.D5:
+                        Console.Clear();
+                        Mainmenu();
+                        break;
+                    default:
+                        break;
+                }
+                monsterController.Insertfjender(fjender);
+
+                Console.WriteLine("For at retuner til start Tryk 1.");
+                tast1 = Console.ReadKey(true);
+
+                if (tast1.Key != ConsoleKey.D1)
+                {
+                    letsKeepGoing = false;
+                }
+
+            }
+        }
     }
-}   // Mange Tak til mine konsulenter Daniel, Nikolai & Lasse
+}   
