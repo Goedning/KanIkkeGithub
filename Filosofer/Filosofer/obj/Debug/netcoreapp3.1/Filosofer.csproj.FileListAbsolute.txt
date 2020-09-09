@@ -1,0 +1,13 @@
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.exe
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.deps.json
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.runtimeconfig.json
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.runtimeconfig.dev.json
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.dll
+C:\Users\ander\source\repos\Filosofer\Filosofer\bin\Debug\netcoreapp3.1\Filosofer.pdb
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.csprojAssemblyReference.cache
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.AssemblyInfoInputs.cache
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.AssemblyInfo.cs
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.csproj.CoreCompileInputs.cache
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.dll
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.pdb
+C:\Users\ander\source\repos\Filosofer\Filosofer\obj\Debug\netcoreapp3.1\Filosofer.genruntimeconfig.cache
