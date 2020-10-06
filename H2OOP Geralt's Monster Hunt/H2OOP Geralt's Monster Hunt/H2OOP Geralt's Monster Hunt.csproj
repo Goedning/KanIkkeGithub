@@ -6,4 +6,10 @@
     <RootNamespace>H2OOP_Geralt_s_Monster_Hunt</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="ABCLibrary">
+      <HintPath>..\ClassLibrary1\bin\Debug\netstandard2.0\ABCLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

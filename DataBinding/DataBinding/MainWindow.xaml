@@ -17,8 +17,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button Content="JA" HorizontalAlignment="Left" Margin="151,262,0,0" VerticalAlignment="Top" Width="202" Height="81" FontSize="24"/>
-        <Button Content="NEJ" HorizontalAlignment="Left" Margin="446,262,0,0" VerticalAlignment="Top" Width="201" Height="81" FontSize="24"/>
+        <Button Content="JA" HorizontalAlignment="Left" Margin="151,262,0,0" VerticalAlignment="Top" Width="202" Height="81" FontSize="24" Click="Button_Ja"/>
+        <Button Content="NEJ" HorizontalAlignment="Left" Margin="446,262,0,0" VerticalAlignment="Top" Width="201" Height="81" FontSize="24" Click="Button_Nej"/>
 
     </Grid>
 </Window>
