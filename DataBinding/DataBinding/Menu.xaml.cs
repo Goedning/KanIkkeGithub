@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 using ABCLibrary;
 
 namespace DataBinding
@@ -22,8 +23,7 @@ namespace DataBinding
     {
         public Menu()
         {
-            InitializeComponent();
-            
+            InitializeComponent();           
 
         }
 
@@ -63,5 +63,16 @@ namespace DataBinding
             opdaterKendtegn.Show();
             Hide();
         }
+
+        private void Button_Save(object sender, RoutedEventArgs e)
+        {
+            string textToRight = mons.list.ToString();
+
+                  
+            StreamWriter sr = File.CreateText(@"testfile.txt");
+            sr.Write(textToRight);
+            sr.Close();
+        }
+
     }
 }

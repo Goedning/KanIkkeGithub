@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 using ABCLibrary;
+using Microsoft.Win32;
 
 namespace DataBinding
 {
@@ -25,6 +27,8 @@ namespace DataBinding
             InitializeComponent();
             DræbsListe.ItemsSource = monster.list.Getmonster();
             this.Menu = menu;
+
+
         }
 
         public Menu Menu;

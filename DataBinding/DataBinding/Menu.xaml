@@ -14,6 +14,7 @@
         <Button Content="Opdater Kendetegn" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="259" Height="64" FontSize="16" Click="Button_Click_4"/>
         <Label Content="Menu" HorizontalAlignment="Left" Margin="351,27,0,0" VerticalAlignment="Top" Width="53" Height="40" FontSize="14"/>
         <Label Content="Fuck udbrud Geralt da han opdagede&#xD;&#xA;hans kill liste var tom&#xD;&#xA;og han selv måtte fylde den ud." HorizontalAlignment="Left" Margin="441,140,0,0" VerticalAlignment="Top" Height="117" Width="341" FontSize="20"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="586,303,0,0" VerticalAlignment="Top" Width="183" Height="69" FontSize="18" Click="Button_Save"/>
 
 
     </Grid>

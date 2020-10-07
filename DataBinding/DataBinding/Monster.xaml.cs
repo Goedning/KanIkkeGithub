@@ -37,6 +37,7 @@ namespace DataBinding
         private void Button_Doppler(object sender, RoutedEventArgs e)
         {
             this.Menu.mons.list.Add(new ABCLibrary.Monster("Doppler", "KENDETEGN: Ingenting ", "ANTAL: 1"));
+;
         }
 
         private void Button_Ghoul(object sender, RoutedEventArgs e)
