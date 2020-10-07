@@ -21,6 +21,14 @@ namespace ABCLibrary
             Kendetegn = b;
             Antal = antal;
         }
+
+        public override string ToString()
+        {
+            return "Navn: " + Navn + " \n" + Kendetegn;
+
+        }
+
+
         public Monster()
         {
 
@@ -31,8 +39,8 @@ namespace ABCLibrary
     public class MonsterListe //B
     {
         private readonly List<IKillable> monster = new List<IKillable>();
+        public IKillable this[int index] => monster[index];
 
-        
         public void Add(IKillable monster)
         {
                        
@@ -89,7 +97,13 @@ namespace ABCLibrary
 
     public sealed class Fjender: IKillable
     {
-        
+
+        public override string ToString()
+        {
+            return "Navn: " + Navn + " \n" + Forbrydelse;
+
+        }
+
         public string Grim { get; set; }
         public string Forbrydelse { get; set; }
         public string Navn { get; set; }

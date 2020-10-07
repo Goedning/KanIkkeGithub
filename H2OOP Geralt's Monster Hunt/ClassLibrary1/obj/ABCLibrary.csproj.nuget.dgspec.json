@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj": {}
+    "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\ClassLibrary1\\ABCLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj": {
+    "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\ClassLibrary1\\ABCLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
-        "projectName": "H2OOP Geralt's Monster Hunt",
-        "projectPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\ClassLibrary1\\ABCLibrary.csproj",
+        "projectName": "ABCLibrary",
+        "projectPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\ClassLibrary1\\ABCLibrary.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\H2OOP Geralt's Monster Hunt\\obj\\",
+        "outputPath": "C:\\Users\\ander\\Documents\\GitHub\\KanIkkeGithub\\H2OOP Geralt's Monster Hunt\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -36,12 +36,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netstandard2.0": {
           "dependencies": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.0.3, )",
               "autoReferenced": true
             }
           },

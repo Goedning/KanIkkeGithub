@@ -23,10 +23,12 @@ namespace DataBinding
             InitializeComponent();
         }
 
+
         private void Button_Ja(object sender, RoutedEventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();
+            Close();
         }
 
         private void Button_Nej(object sender, RoutedEventArgs e)

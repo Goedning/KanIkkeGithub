@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:DataBinding"
         mc:Ignorable="d"
         Title="FjernEtMonster" Height="450" Width="800">
-    <Grid Background="#FFA89C9C">
-        <ListBox HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="51" Margin="462,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238" FontSize="18"/>
+    <Grid x:Name="Grid" Background="#FFA89C9C">
         <Label Content="Liste" HorizontalAlignment="Left" Margin="253,10,0,0" VerticalAlignment="Top" Height="38" Width="83" FontSize="16"/>
-        <Label Content="Indtast navnet på det monster du vil have fjernet fra listen.&#xD;&#xA;(Case Sensetive)" HorizontalAlignment="Left" Margin="359,195,0,0" VerticalAlignment="Top" Width="423" Height="65" FontSize="16"/>
-        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="527,310,0,0" VerticalAlignment="Top" Width="255" Height="99" FontSize="20"/>
+        <Label Content="Select &amp; Slet!&#xD;&#xA;" HorizontalAlignment="Left" Margin="599,79,0,0" VerticalAlignment="Top" Width="100" Height="65" FontSize="16"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="527,310,0,0" VerticalAlignment="Top" Width="255" Height="99" FontSize="20" Click="Button_Click"/>
+        <Button Content="Slet!" HorizontalAlignment="Left" Margin="573,114,0,0" VerticalAlignment="Top" Width="152" Height="89" FontSize="20" Click="Button_Click_1"/>
+        <ListBox x:Name="FjernListe" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="217"/>
 
     </Grid>
 </Window>

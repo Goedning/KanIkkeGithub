@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ABCLibrary;
 
 namespace DataBinding
 {
@@ -19,9 +20,23 @@ namespace DataBinding
     /// </summary>
     public partial class Liste : Window
     {
-        public Liste()
+        public Liste(MonsterController monster, Menu menu)
         {
             InitializeComponent();
+            DræbsListe.ItemsSource = monster.list.Getmonster();
+            this.Menu = menu;
         }
+
+        public Menu Menu;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Menu.Show();
+            Close();
+        }
+
+       
+
+        
     }
 }

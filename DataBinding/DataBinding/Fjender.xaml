@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Fjender" Height="450" Width="800">
     <Grid Background="#FF9C8B8B">
-        <Button Content="A Common Bandit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="251" Height="83" FontSize="18"/>
-        <Button Content="Poul Præmiephysco" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="251" Height="83" FontSize="18"/>
-        <Button Content="Emil" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="251" Height="87" FontSize="18"/>
-        <Button Content="Kim Jong Un" HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Width="251" Height="87" FontSize="18"/>
-        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="547,309,0,0" VerticalAlignment="Top" Width="235" Height="100" FontSize="18"/>
+        <Button Content="A Common Bandit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="251" Height="83" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="Poul Præmiephysco" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="251" Height="83" FontSize="18" Click="Button_Click_2"/>
+        <Button Content="Emil" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="251" Height="87" FontSize="18" Click="Button_Click_3"/>
+        <Button Content="Kim Jong Un" HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Width="251" Height="87" FontSize="18" Click="Button_Click_4"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="547,309,0,0" VerticalAlignment="Top" Width="235" Height="100" FontSize="18" Click="Button_Click"/>
         <Label Content="Hmm, det behøver ikke&#xD;&#xA;kun at være monstre" HorizontalAlignment="Left" Margin="483,36,0,0" VerticalAlignment="Top" Height="90" Width="299" FontSize="24"/>
 
     </Grid>

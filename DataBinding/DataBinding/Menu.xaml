@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:DataBinding"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800" Background="#FFAE9191">
-    <Grid>
-        <Button Content="Tilføj Monstre Til Listen" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="259" Height="70" FontSize="16"/>
-        <Button Content="Tilføj Fjender Til Listen" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="259" Height="65" FontSize="16"/>
-        <Button Content="Fjern Et Monster Fra Listen" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Width="259" Height="63" FontSize="16"/>
-        <Button Content="Se Min To Kill List" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="259" Height="63" FontSize="16"/>
-        <Button Content="Opdater Kendetegn" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="259" Height="64" FontSize="16"/>
+    <Grid Background="#FFACA4A4">
+        <Button Content="Tilføj Monstre Til Listen" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="259" Height="70" FontSize="16" Click="Button_Click"/>
+        <Button Content="Tilføj Fjender Til Listen" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="259" Height="65" FontSize="16" Click="Button_Click_2"/>
+        <Button Content="Fjern Et Monster Fra Listen" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Width="259" Height="63" FontSize="16" Click="Button_Click_3"/>
+        <Button Content="Se Min To Kill List" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="259" Height="63" FontSize="16" Click="Button_Click_1"/>
+        <Button Content="Opdater Kendetegn" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="259" Height="64" FontSize="16" Click="Button_Click_4"/>
         <Label Content="Menu" HorizontalAlignment="Left" Margin="351,27,0,0" VerticalAlignment="Top" Width="53" Height="40" FontSize="14"/>
-        <Label Content="Fuck udbrud Geralt da han opdagede&#xD;&#xA;hans kill liste var tom&#xD;&#xA;og han selv måttefylde den ud." HorizontalAlignment="Left" Margin="441,140,0,0" VerticalAlignment="Top" Height="117" Width="341" FontSize="20"/>
+        <Label Content="Fuck udbrud Geralt da han opdagede&#xD;&#xA;hans kill liste var tom&#xD;&#xA;og han selv måtte fylde den ud." HorizontalAlignment="Left" Margin="441,140,0,0" VerticalAlignment="Top" Height="117" Width="341" FontSize="20"/>
 
 
     </Grid>

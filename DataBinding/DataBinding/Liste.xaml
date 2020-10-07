@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Liste" Height="450" Width="800">
     <Grid Background="#FFACA3A3">
-        <ListBox HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="262"/>
+        <ListBox x:Name="DræbsListe" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="262"/>
         <Label Content="Hmm, jeg må fylde mere i listen" HorizontalAlignment="Left" Margin="391,38,0,0" VerticalAlignment="Top" Height="56" Width="358" FontSize="20"/>
-        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="562,300,0,0" VerticalAlignment="Top" Width="220" Height="109" FontSize="20"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="562,300,0,0" VerticalAlignment="Top" Width="220" Height="109" FontSize="20" Click="Button_Click"/>
 
     </Grid>
 </Window>

@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="OpdaterKendtegn" Height="450" Width="800">
     <Grid Background="#FFBBB3B3">
-        <ListBox HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="274"/>
-        <Label Content="Hmm nogle infomationer er forældet." HorizontalAlignment="Left" Margin="400,29,0,0" VerticalAlignment="Top" Height="50" Width="382" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="57" Margin="474,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" FontSize="18"/>
-        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="581,338,0,0" VerticalAlignment="Top" Width="201" Height="71" FontSize="18"/>
-        <Label Content="Indtast navnet, på det valgte monster,&#xD;&#xA;efterfulgt med det nye kendetegn" HorizontalAlignment="Left" Margin="447,163,0,0" VerticalAlignment="Top" Height="113" Width="311" FontSize="18"/>
+        <ListBox x:Name="OpdaterList" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="274"/>
+        <Label Content="Hmm nogle infomationer er forældet." HorizontalAlignment="Left" Margin="289,10,0,0" VerticalAlignment="Top" Height="50" Width="382" FontSize="20"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="57" Margin="535,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" FontSize="18"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="581,338,0,0" VerticalAlignment="Top" Width="201" Height="71" FontSize="18" Click="Button_Click"/>
+        <Label Content="Tryk På kanppen for at vælge det&#xD;&#xA;monster skal have nyt kendetegn" HorizontalAlignment="Left" Margin="501,225,0,0" VerticalAlignment="Top" Height="113" Width="281" FontSize="18"/>
+        <Button Content="Vælg" HorizontalAlignment="Left" Margin="535,93,0,0" VerticalAlignment="Top" Width="119" Height="65" Click="Button_Vælg" FontSize="16"/>
+        <Button Content="Opdater" HorizontalAlignment="Left" Margin="659,93,0,0" VerticalAlignment="Top" Width="123" Height="65" FontSize="16" Click="Button_Opdater"/>
 
     </Grid>
 </Window>
