@@ -66,12 +66,8 @@ namespace DataBinding
 
         private void Button_Save(object sender, RoutedEventArgs e)
         {
-            string textToRight = mons.list.ToString();
+            
 
-                  
-            StreamWriter sr = File.CreateText(@"testfile.txt");
-            sr.Write(textToRight);
-            sr.Close();
         }
 
     }

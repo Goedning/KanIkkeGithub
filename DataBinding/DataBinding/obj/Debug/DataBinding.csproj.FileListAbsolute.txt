@@ -55,3 +55,6 @@ C:\Users\ander\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\bin\Debug\
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\bin\Debug\ABCLibrary.pdb
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\obj\Debug\DataBinding.csproj.CopyComplete
 C:\Users\ander\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\obj\Debug\DataBinding.csprojAssemblyReference.cache
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\bin\Debug\ABCLibrary.dll
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\bin\Debug\ABCLibrary.pdb
+C:\Users\45296\Documents\GitHub\KanIkkeGithub\DataBinding\DataBinding\obj\Debug\DataBinding.csproj.CopyComplete
