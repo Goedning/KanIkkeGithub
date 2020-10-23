@@ -64,7 +64,7 @@
             this.textBrugernavn.Size = new System.Drawing.Size(223, 38);
             this.textBrugernavn.TabIndex = 1;
             this.textBrugernavn.Text = "Brugernavn";
-            this.textBrugernavn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBrugernavn_MouseClick);
+            this.textBrugernavn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBrugernavn_MouseClick);
             // 
             // textKode
             // 
@@ -78,7 +78,7 @@
             this.textKode.Size = new System.Drawing.Size(223, 38);
             this.textKode.TabIndex = 2;
             this.textKode.Text = "Kode";
-            this.textKode.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textKode_MouseClick);
+            this.textKode.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextKode_MouseClick);
             // 
             // btn_Login
             // 
@@ -89,7 +89,7 @@
             this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = true;
-            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            this.btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
             // panel1
             // 
@@ -117,7 +117,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // lbl_Clear
             // 
@@ -129,7 +129,7 @@
             this.lbl_Clear.Size = new System.Drawing.Size(69, 25);
             this.lbl_Clear.TabIndex = 8;
             this.lbl_Clear.Text = "Clear ";
-            this.lbl_Clear.Click += new System.EventHandler(this.lbl_Clear_Click);
+            this.lbl_Clear.Click += new System.EventHandler(this.Lbl_Clear_Click);
             // 
             // label2
             // 

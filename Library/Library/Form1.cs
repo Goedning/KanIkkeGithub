@@ -17,13 +17,13 @@ namespace Library
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void PictureBox2_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
         }
 
 
-        private void textBrugernavn_MouseClick(object sender, MouseEventArgs e)
+        private void TextBrugernavn_MouseClick(object sender, MouseEventArgs e)
         {
             if(textBrugernavn.Text == "Brugernavn")
             {
@@ -31,7 +31,7 @@ namespace Library
             }
         }
 
-        private void textKode_MouseClick(object sender, MouseEventArgs e)
+        private void TextKode_MouseClick(object sender, MouseEventArgs e)
         {
             if (textKode.Text == "Kode")
             {
@@ -40,13 +40,13 @@ namespace Library
             }
         }
 
-        private void lbl_Clear_Click(object sender, EventArgs e)
+        private void Lbl_Clear_Click(object sender, EventArgs e)
         {
             textKode.Clear();
             textBrugernavn.Clear();
         }
 
-        private void btn_Login_Click(object sender, EventArgs e)
+        private void Btn_Login_Click(object sender, EventArgs e)
         {
             if (textBrugernavn.Text == "123" && textKode.Text == "123")
             {
