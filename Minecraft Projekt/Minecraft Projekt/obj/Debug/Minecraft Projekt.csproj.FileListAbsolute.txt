@@ -5,3 +5,10 @@ C:\Users\45296\source\repos\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecr
 C:\Users\45296\source\repos\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.csproj.CoreCompileInputs.cache
 C:\Users\45296\source\repos\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.exe
 C:\Users\45296\source\repos\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.pdb
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\bin\Debug\Minecraft Projekt.exe.config
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\bin\Debug\Minecraft Projekt.exe
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\bin\Debug\Minecraft Projekt.pdb
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.csprojAssemblyReference.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.csproj.CoreCompileInputs.cache
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.exe
+C:\Users\ander\Documents\GitHub\KanIkkeGithub\Minecraft Projekt\Minecraft Projekt\obj\Debug\Minecraft Projekt.pdb

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Hovedmenu.cs" />
     <Compile Include="MainStart.cs" />
+    <Compile Include="Mobs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

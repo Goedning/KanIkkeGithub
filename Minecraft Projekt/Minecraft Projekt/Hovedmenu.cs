@@ -19,7 +19,8 @@ namespace Minecraft_Projekt
 
             if (input == "y")
             {
-
+                Console.Clear();
+                GameStart();
             }
             else if (input == "n")
             {
@@ -28,5 +29,23 @@ namespace Minecraft_Projekt
 
         }
 
+        public void GameStart()
+        {
+            Console.WriteLine("Debug");
+            Console.ReadLine();
+        }
+
     }
 }
+
+// Neutralt Monster: Sheep
+// Neutralt Monster: Horse
+// Neutralt Monster: Pig
+// Neutralt Monster: Piglin (Skal arve fra pig)
+// Neutralt Monster: Zombiefied Pigling (Skal arve fra pig)
+
+// Hostile Monster: Creeper
+// Hostile Monster: Zombie
+// Hostile Monster: Ghast
+// Hostile Monster: Husk
+// Hostile Monster: Phantom
