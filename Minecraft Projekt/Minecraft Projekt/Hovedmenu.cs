@@ -29,9 +29,11 @@ namespace Minecraft_Projekt
 
         }
 
-        public void GameStart()
+        public void GameStart() // Her starter spillet indsæt random mob gennem tråde
         {
-            Console.WriteLine("Debug");
+
+
+            Console.WriteLine("I afstanden kan du se en mob komme imod dig, det er en" + Name);
             Console.ReadLine();
         }
 
