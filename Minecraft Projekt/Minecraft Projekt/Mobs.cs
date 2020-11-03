@@ -20,6 +20,11 @@ namespace Minecraft_Projekt
             Udsene = udsene;
         }
 
+        public Mob()
+        {
+
+        }
+
     }
 
     

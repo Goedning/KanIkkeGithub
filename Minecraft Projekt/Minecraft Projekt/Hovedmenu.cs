@@ -29,11 +29,19 @@ namespace Minecraft_Projekt
 
         }
 
+        
+
         public void GameStart() // Her starter spillet indsæt random mob gennem tråde
         {
+            Mob mob = new Mob();
+            // Få lagt mobsne over i listen og find en random, de skal alle kører på en tråd. Find en måde at nedarve fra Pig.
+            mob = new Mob(" Sheep ", "Neutral", "Blød");
+            mob = new Mob(" Horse ", "Neutral", "Blød");
+            mob = new Mob(" Pig ", "Neutral", "Blød");
+            mob = new Mob(" Piglin ", "Neutral", "Blød");
+            mob = new Mob(" Zombiefied Piglin ", "Neutral", "Blød");
 
-
-            Console.WriteLine("I afstanden kan du se en mob komme imod dig, det er en" + Name);
+            Console.WriteLine("I afstanden kan du se en mob komme imod dig, det er en" + mob.Name);
             Console.ReadLine();
         }
 
