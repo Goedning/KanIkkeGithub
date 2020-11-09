@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace Minecraft_Projekt
 {
-    public class Mob 
+    public class NMob : INeutralMobs
     {
         public string Name { get; set; }
         public string Neutral { get; set; }
         public string Udsene { get; set; }
+        public string Hit { get; set; }
+        public string Fodrer { get; set; }
+        public string Skin { get; set; }
 
 
-        public Mob(string name, string neutral, string udsene)
+        public NMob(string name, string neutral, string udsene)
         {
             Name = name;
             Neutral = neutral;
             Udsene = udsene;
         }
 
-        public Mob()
+        public NMob()
         {
 
         }
@@ -28,26 +31,27 @@ namespace Minecraft_Projekt
     }
 
     
-
-    public class NeutralListe // Vi holder øje med hvilke mobs der er neutrale
+    public class neutralList // Vi holder øje med hvilke mobs der er neutrale
     {
-        public NeutralListe neutral = new NeutralListe();
+        private List<INeutralMobs> Nmobs = new List<INeutralMobs>();
 
-        
 
-    }
-
-    public class HostileListe // Vi holder øje med hvilke mobs der er hostile
-    {
-        public HostileListe hostile = new HostileListe();
+        public void Insert()
+        {
+            Nmobs.Add(Nmobs);
+        }
 
 
     }
 
-    public interface MobsDetails // Her skal jeg have ind hvad de forskellige mobs kan gøre, som fek.s at spise.
+
+
+    public interface INeutralMobs // Her skal jeg have ind hvad de forskellige mobs kan gøre, som fek.s at spise.
     {
-        String Name { get; set; }
-        String Fodrer { get; set; }
+        string Hit { get; set; }
+        string Fodrer { get; set; }
+        string Skin { get; set; }
+
     }
 
 }
