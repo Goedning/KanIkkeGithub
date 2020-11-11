@@ -31,26 +31,73 @@ namespace Minecraft_Projekt
     }
 
     
-    public class neutralList // Vi holder øje med hvilke mobs der er neutrale
+    public class NeutralList // Vi holder øje med hvilke mobs der er neutrale
     {
         private List<INeutralMobs> Nmobs = new List<INeutralMobs>();
 
 
-        public void Insert()
+        public void Insert(INeutralMobs Nmobs)
         {
-            Nmobs.Add(Nmobs);
+            this.Nmobs.Add(Nmobs);
         }
-
-
     }
 
 
 
-    public interface INeutralMobs // Her skal jeg have ind hvad de forskellige mobs kan gøre, som fek.s at spise.
+    public interface INeutralMobs // Her skal jeg have ind hvad de forskellige mobs kan gøre, som f.eks at spise.
     {
         string Hit { get; set; }
         string Fodrer { get; set; }
         string Skin { get; set; }
+
+    }
+
+    public class Weapon
+    {
+        public string name;
+        public int attack;
+        public int defend;
+
+        public static List<Weapon> weapons = new List<Weapon>();
+
+        public Weapon(string aName, int aAttack, int aDefend)
+        {
+            name = aName;
+            attack = aAttack;
+            defend = aDefend;
+        }
+
+        public static void Weapons(string name, int attack, int defend)
+        {
+            Weapon weapon = new Weapon(name, attack, defend);
+            weapons.Add(weapon);
+        }
+
+        public static void AllWeaponStats()
+        {
+            Console.WriteLine("\n Alle tilgængelige våben ");
+            foreach (Weapon weapon in Weapon.weapons)
+            {
+                Console.WriteLine("Navn: \nAttack: \nDefend");
+
+            }
+        }
+
+        public static void CurrentWeapon()
+        {
+
+        }
+
+    }
+
+    public class Health
+    {
+        public static Weapon Stick = new Weapon("Gren", 1, 0);
+
+        public string name;
+        public int lv = 0;
+        public int HP;
+        public static Weapon equipped_weapon = Stick;
 
     }
 
