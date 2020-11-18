@@ -8,44 +8,57 @@ namespace Minecraft_Projekt
 {
     class Hovedmenu
     {
-        string input = "";
+        char input;
         public void Start()
         {
             Console.WriteLine("Velkommen til mit Minecraft projekt!");
             Console.WriteLine("Hvis du er klar så bekræft venligst på y tasten");
 
 
-            input = Console.ReadLine();
+            input = Console.ReadKey(true).KeyChar;
 
-            if (input == "y")
+            if (input == 'y')
             {
                 Console.Clear();
                 // GameStart();
                 Console.Write("╓");
                 Console.Write(new string('═', 98));
                 Console.WriteLine("╗");
-                for (int i = 0; i < 48; i++)
+                for (int i = 0; i < 27; i++)
                 {
                     Console.WriteLine("║");
                 }
                 Console.Write("╙");
                 Console.Write(new string('═', 98));
                 Console.WriteLine("╜");
-                Console.SetCursorPosition(48, 50);
-                for (int i = 0; i < 48; i++)
+                
+                for (int i = 1; i < 28; i++)
                 {
+                    Console.SetCursorPosition(99, i);
                     Console.WriteLine("║");
                 }
-                Console.ReadKey();
+
+                Player mig = new Player();
+                mig.Position.PositionX = 27;
+                mig.Position.PositionY = 27;
+
+                for (int i = 0; i < 100; i++)
+                {
+                    Console.SetCursorPosition(mig.Position.PositionX, mig.Position.PositionY);
+                    Console.Write(mig.tegn);
+                    mig.Move(Console.ReadKey());
+                }
+
+                
 
             }
-            else if (input == "n")
+            else if (input == 'n')
             {
                 Environment.Exit(1);
             }
 
+
         }
-        
 
     }
 }
